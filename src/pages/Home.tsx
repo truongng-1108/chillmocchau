@@ -1,5 +1,5 @@
 import MysticalHero from '../components/home/MysticalHero';
-import AsymmetricServices from '../components/home/AsymmetricProducts';
+import AsymmetricProducts from '../components/home/AsymmetricProducts';
 import RippedPaperSection from '../components/home/RippedPaperSection';
 import NatureTestimonials from '../components/home/NatureTestimonials';
 import Services from '../components/home/Services';
@@ -10,7 +10,7 @@ const Home = () => {
     <div className="space-y-0">
       <MysticalHero />
       <RippedPaperSection />
-      <AsymmetricServices />
+      <AsymmetricProducts />
       <Services />
       <NatureTestimonials />
       <CTA />
