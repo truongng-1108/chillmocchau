@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  seeme-app:
+    build: .
+    ports:
+      - "8333:80"  # chỉ map port nội bộ
+    container_name: semee-semee-app
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+

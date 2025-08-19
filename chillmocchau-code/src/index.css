@@ -1,0 +1,508 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-vintage-100 text-forest-900 overflow-x-hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .forest-texture {
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(59, 85, 24, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(122, 148, 62, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(70, 96, 54, 0.05) 0%, transparent 50%);
+  }
+  
+  .wood-grain {
+    background-image: 
+      linear-gradient(90deg, rgba(60, 47, 27, 0.1) 0%, transparent 50%, rgba(60, 47, 27, 0.1) 100%),
+      linear-gradient(0deg, rgba(125, 107, 74, 0.05) 0%, transparent 50%);
+  }
+  
+  .mountain-silhouette {
+    clip-path: polygon(0% 100%, 15% 85%, 25% 90%, 35% 75%, 50% 80%, 65% 70%, 80% 85%, 100% 75%, 100% 100%);
+  }
+  
+  .torn-paper {
+    clip-path: polygon(0% 0%, 95% 0%, 100% 5%, 98% 15%, 100% 25%, 95% 35%, 100% 45%, 97% 55%, 100% 65%, 95% 75%, 100% 85%, 98% 95%, 100% 100%, 0% 100%);
+  }
+  
+  .leaf-shape {
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 85% 70%, 50% 100%, 15% 70%, 0% 35%, 20% 10%);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-vintage-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-forest-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-forest-600;
+}
+
+/* Custom scrollbar for legend section */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-purple-100/50 rounded-full;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-purple-400/70 rounded-full;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-500/80;
+}
+
+/* Floating elements */
+.floating-leaves {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-leaves::before,
+.floating-leaves::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(122, 148, 62, 0.3);
+  border-radius: 50% 0;
+  animation: leafFall 12s linear infinite;
+}
+
+.floating-leaves::before {
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.floating-leaves::after {
+  left: 80%;
+  animation-delay: 6s;
+}
+
+/* Parallax container */
+.parallax-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* Mobile animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.3s ease-out;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax-back {
+  transform: translateZ(-300px) scale(1.3);
+}
+
+.parallax-mid {
+  transform: translateZ(-150px) scale(1.15);
+}
+
+.parallax-front {
+  transform: translateZ(0);
+}
+
+/* Auth page specific animations */
+@keyframes mistFlow {
+  0%, 100% { 
+    transform: translateX(0) translateY(0);
+    opacity: 0.3;
+  }
+  50% { 
+    transform: translateX(30px) translateY(-10px);
+    opacity: 0.6;
+  }
+}
+
+@keyframes leafDance {
+  0%, 100% { 
+    transform: translateY(0) rotate(0deg);
+  }
+  25% { 
+    transform: translateY(-10px) rotate(5deg);
+  }
+  75% { 
+    transform: translateY(5px) rotate(-3deg);
+  }
+}
+
+@keyframes cloudDrift {
+  0% { 
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  10%, 90% { 
+    opacity: 0.4;
+  }
+  100% { 
+    transform: translateX(calc(100vw + 100px));
+    opacity: 0;
+  }
+}
+
+@keyframes formGlow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(122, 148, 62, 0.1);
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(122, 148, 62, 0.2);
+  }
+}
+
+.auth-mist {
+  animation: mistFlow 8s ease-in-out infinite;
+}
+
+.auth-leaf {
+  animation: leafDance 6s ease-in-out infinite;
+}
+
+.auth-cloud {
+  animation: cloudDrift 25s linear infinite;
+}
+
+.auth-form {
+  animation: formGlow 4s ease-in-out infinite;
+}
+
+/* Enhanced input focus effects */
+.auth-input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 3px rgba(122, 148, 62, 0.1);
+}
+
+/* Button press effect */
+.auth-button:active {
+  transform: scale(0.98);
+}
+
+/* Smooth transitions for all auth elements */
+.auth-element {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Forest immersion effects */
+@keyframes mysticalFloat {
+  0%, 100% { 
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 0.4;
+  }
+  25% {
+    transform: translateY(-20px) rotate(90deg) scale(1.1);
+    opacity: 0.7;
+  }
+  50% { 
+    transform: translateY(-40px) rotate(180deg) scale(1.2);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-20px) rotate(270deg) scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes portalPulse {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg);
+    opacity: 0.7;
+    filter: blur(0px);
+  }
+  25% {
+    transform: scale(1.05) rotate(90deg);
+    opacity: 0.9;
+    filter: blur(1px);
+  }
+  50% { 
+    transform: scale(1.15) rotate(180deg);
+    opacity: 1;
+    filter: blur(2px);
+  }
+  75% {
+    transform: scale(1.05) rotate(270deg);
+    opacity: 0.9;
+    filter: blur(1px);
+  }
+}
+
+@keyframes treeGrow {
+  0% { 
+    transform: scale(0.05) translateY(150px) rotateZ(-10deg);
+    opacity: 0;
+    filter: blur(5px);
+  }
+  25% {
+    transform: scale(0.3) translateY(80px) rotateZ(-5deg);
+    opacity: 0.3;
+    filter: blur(3px);
+  }
+  50% {
+    transform: scale(0.6) translateY(30px) rotateZ(0deg);
+    opacity: 0.5;
+    filter: blur(1px);
+  }
+  75% {
+    transform: scale(0.85) translateY(10px) rotateZ(2deg);
+    opacity: 0.8;
+    filter: blur(0.5px);
+  }
+  100% { 
+    transform: scale(1) translateY(0) rotateZ(0deg);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+@keyframes forestDepth {
+  0% { 
+    transform: scale(1) translateZ(0) perspective(1000px);
+    filter: brightness(1) contrast(1);
+  }
+  25% {
+    transform: scale(1.5) translateZ(25px) perspective(1200px);
+    filter: brightness(1.1) contrast(1.1);
+  }
+  50% {
+    transform: scale(2.5) translateZ(75px) perspective(1500px);
+    filter: brightness(1.2) contrast(1.2);
+  }
+  75% {
+    transform: scale(3.5) translateZ(125px) perspective(1800px);
+    filter: brightness(1.3) contrast(1.3);
+  }
+  100% { 
+    transform: scale(4) translateZ(200px) perspective(2000px);
+    filter: brightness(1.4) contrast(1.4);
+  }
+}
+
+@keyframes smoothZoom {
+  0% {
+    transform: scale(1) translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(5) translateZ(300px);
+    opacity: 0.8;
+  }
+}
+
+@keyframes depthBlur {
+  0% {
+    filter: blur(0px) brightness(1);
+  }
+  50% {
+    filter: blur(2px) brightness(1.2);
+  }
+  100% {
+    filter: blur(5px) brightness(1.5);
+  }
+}
+
+.mystical-particle {
+  animation: mysticalFloat 6s ease-in-out infinite;
+}
+
+.portal-ring {
+  animation: portalPulse 4s ease-in-out infinite;
+}
+
+.forest-tree {
+  animation: treeGrow 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.forest-depth {
+  animation: forestDepth 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.smooth-zoom {
+  animation: smoothZoom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.depth-blur {
+  animation: depthBlur 2s ease-in-out forwards;
+}
+
+/* Enhanced text effects for immersion */
+.immersion-text {
+  text-shadow: 0 0 30px rgba(122, 148, 62, 0.6);
+  animation: textGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+  0% { 
+    text-shadow: 0 0 30px rgba(122, 148, 62, 0.6);
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 0 0 40px rgba(122, 148, 62, 0.8), 0 0 60px rgba(122, 148, 62, 0.4);
+    transform: scale(1.02);
+  }
+  100% { 
+    text-shadow: 0 0 50px rgba(122, 148, 62, 1), 0 0 80px rgba(122, 148, 62, 0.5);
+    transform: scale(1.05);
+  }
+}
+
+/* Smooth transitions for all forest elements */
+.forest-element {
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Enhanced perspective for 3D effects */
+.forest-perspective {
+  perspective: 2000px;
+  perspective-origin: center center;
+}
+
+/* Custom Leaflet styles */
+.leaflet-container {
+  font-family: 'Merriweather', serif;
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(246, 241, 222, 0.98);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(122, 148, 62, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(59, 85, 24, 0.25);
+}
+
+.leaflet-popup-tip {
+  background: rgba(246, 241, 222, 0.98);
+  border: 1px solid rgba(122, 148, 62, 0.2);
+}
+
+.leaflet-popup-close-button {
+  color: #466036 !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  padding: 4px 8px !important;
+}
+
+.leaflet-popup-close-button:hover {
+  color: #3b5518 !important;
+  background: rgba(122, 148, 62, 0.1) !important;
+  border-radius: 50% !important;
+}
+
+.custom-tree-marker {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-tree-marker:hover {
+  transform: scale(1.2) translateY(-2px);
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+}
+
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 10px 30px rgba(158, 158, 158, 0.2) !important;
+}
+
+.leaflet-control-zoom a {
+  background: rgba(246, 241, 222, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(122, 148, 62, 0.2) !important;
+  color: #466036 !important;
+  font-weight: bold !important;
+  transition: all 0.3s ease !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: rgba(122, 148, 62, 0.1) !important;
+  color: #3b5518 !important;
+  transform: scale(1.05) !important;
+}
+
+.leaflet-control-zoom a:first-child {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+.leaflet-control-zoom a:last-child {
+  border-radius: 0 0 12px 12px !important;
+}
+
+/* Map loading animation */
+.leaflet-tile-container {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Custom map animations */
+@keyframes mapMarkerBounce {
+  0%, 100% { 
+    transform: translateY(0) scale(1);
+  }
+  50% { 
+    transform: translateY(-10px) scale(1.1);
+  }
+}
+
+.marker-bounce {
+  animation: mapMarkerBounce 2s ease-in-out infinite;
+}
+
+/* Smooth transitions for map interactions */
+.leaflet-interactive {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.leaflet-interactive:hover {
+  filter: brightness(1.1) saturate(1.2);
+}
