@@ -281,7 +281,10 @@ const Services = () => {
                   size="lg" 
                   className="w-full"
                 >
-                  Đăng ký ngay
+                  <span className="flex items-center justify-center space-x-2">
+                    <TreePine className="h-5 w-5" />
+                    <span>Đăng ký ngay</span>
+                  </span>
                 </Button>
               </Card>
             ))}
@@ -340,9 +343,12 @@ const Services = () => {
                 <Button 
                   variant={service.popular ? 'mountain' : 'outline'} 
                   size="md" 
-                  className="w-full"
+                  className="w-full hover:scale-105 transition-transform duration-300"
                 >
-                  Đặt ngay
+                  <span className="flex items-center justify-center space-x-2">
+                    <service.icon className="h-4 w-4" />
+                    <span>Đặt ngay</span>
+                  </span>
                 </Button>
               </Card>
             ))}
@@ -415,7 +421,10 @@ const Services = () => {
             </div>
             
             <Button size="xl" variant="forest" className="w-full md:w-auto">
-              Nhận tư vấn miễn phí
+              <span className="flex items-center justify-center space-x-2">
+                <Calendar className="h-5 w-5" />
+                <span>Nhận tư vấn miễn phí</span>
+              </span>
             </Button>
           </div>
         </Card>
