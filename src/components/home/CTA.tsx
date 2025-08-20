@@ -59,6 +59,15 @@ const CTA = () => {
                 Tư vấn hành trình miễn phí
               </Button>
             </Link>
+            <Link to="/partner-registration">
+              <Button 
+                variant="mountain" 
+                size="xl" 
+                className="w-full sm:w-auto bg-gradient-to-r from-vintage-600 to-vintage-700 hover:from-vintage-500 hover:to-vintage-600"
+              >
+                Trở thành đối tác
+              </Button>
+            </Link>
           </div>
         </div>
 

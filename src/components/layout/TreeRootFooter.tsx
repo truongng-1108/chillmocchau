@@ -92,6 +92,12 @@ const TreeRootFooter = () => {
                   Liên hệ
                 </Link>
               </li>
+              <li>
+                <Link to="/partner-registration" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
+                  <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4 group-hover:scale-150 transition-transform duration-300"></span>
+                  Đăng ký đối tác
+                </Link>
+              </li>
             </ul>
           </div>
 

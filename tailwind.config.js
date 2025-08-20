@@ -89,6 +89,9 @@ export default {
         'mist': 'mist 15s ease-in-out infinite',
         'leaf-fall': 'leafFall 12s linear infinite',
         'branch-sway': 'branchSway 10s ease-in-out infinite',
+        'card-glow': 'cardGlow 2.2s ease-in-out infinite alternate',
+        'pattern-pan-slow': 'patternPan 40s linear infinite',
+        'tilt': 'tilt 10s ease-in-out infinite',
       },
       keyframes: {
         float: {
@@ -127,6 +130,19 @@ export default {
           '0%, 100%': { transform: 'rotate(-1deg)' },
           '25%': { transform: 'rotate(1deg)' },
           '75%': { transform: 'rotate(-0.5deg)' },
+        },
+        cardGlow: {
+          '0%': { boxShadow: '0 0 0 0 rgba(122,148,62,0.2)', transform: 'translateY(0) scale(1)' },
+          '100%': { boxShadow: '0 20px 50px -10px rgba(59,85,24,0.35)', transform: 'translateY(-2px) scale(1.01)' },
+        },
+        patternPan: {
+          '0%': { backgroundPosition: '0% 0%' },
+          '100%': { backgroundPosition: '200% 200%' },
+        },
+        tilt: {
+          '0%': { transform: 'perspective(800px) rotateX(0deg) rotateY(0deg)' },
+          '50%': { transform: 'perspective(800px) rotateX(1deg) rotateY(-1deg)' },
+          '100%': { transform: 'perspective(800px) rotateX(0deg) rotateY(0deg)' },
         },
       },
       clipPath: {

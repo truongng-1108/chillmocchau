@@ -21,6 +21,7 @@ const ForestHeader = () => {
     { name: 'Bản đồ', href: '/maps', current: location.pathname === '/maps' },
     { name: 'Dịch vụ', href: '/services', current: location.pathname === '/services' },
     { name: 'Liên hệ', href: '/contact', current: location.pathname === '/contact' },
+    { name: 'Đối tác', href: '/partner-registration', current: location.pathname === '/partner-registration' },
   ];
 
   return (

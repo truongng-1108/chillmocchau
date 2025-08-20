@@ -5,13 +5,15 @@ interface CardProps {
   className?: string;
   hover?: boolean;
   variant?: 'default' | 'forest' | 'mountain' | 'earth' | 'glass';
+  onClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 
 const Card: React.FC<CardProps> = ({ 
   children, 
   className = '', 
   hover = false,
-  variant = 'default'
+  variant = 'default',
+  onClick
 }) => {
   const baseClasses = 'rounded-3xl transition-all duration-500 relative overflow-hidden';
   
@@ -24,11 +26,16 @@ const Card: React.FC<CardProps> = ({
   };
   
   const hoverClasses = hover 
-    ? 'hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer group' 
+    ? 'hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] group' 
     : '';
 
   return (
-    <div className={`${baseClasses} ${variantClasses[variant]} ${hoverClasses} ${className}`}>
+    <div
+      className={`${baseClasses} ${variantClasses[variant]} ${hoverClasses} ${onClick ? 'cursor-pointer' : ''} ${className}`}
+      onClick={onClick}
+      tabIndex={onClick ? 0 : undefined}
+      role={onClick ? 'button' : undefined}
+    >
       {/* Subtle gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none" />
       

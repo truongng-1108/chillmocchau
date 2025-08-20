@@ -8,6 +8,7 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Auth from './pages/Auth';
 import Maps from './pages/Maps';
+import PartnerRegistration from './pages/PartnerRegistration';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/maps" element={<Maps />} />
+            <Route path="/partner-registration" element={<PartnerRegistration />} />
           </Routes>
         </main>
         <TreeRootFooter />
