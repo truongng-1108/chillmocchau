@@ -6,75 +6,75 @@ import ProductFilter from '../components/products/ProductFilter';
 const products = [
   {
     id: 1,
-    name: 'Trà Cổ Thụ Shan Tuyết Hoàng Gia',
-    age: 1500,
-    price: 85000000,
-    rentPrice: 2500000,
+    name: 'Homestay View Đồi Chè + BBQ Tối',
+    age: 2, // coi như 2N1Đ
+    price: 1800000,
+    rentPrice: 350000, // add-on từ
     status: 'available' as const,
-    image: 'https://i.pinimg.com/1200x/ea/98/a7/ea98a74048e3ab2b686b8f1f97a63f34.jpg',
-    location: 'Đỉnh Fansipan, Lào Cai',
-    category: 'shan-tuyet',
-    rarity: 'Huyền thoại'
+    image: 'https://i.pinimg.com/1200x/98/85/f3/9885f38dc02d4aad94ffe92bfc728894.jpg',
+    location: 'Bản Áng, Mộc Châu',
+    category: 'stay',
+    rarity: 'Theo mùa'
   },
   {
     id: 2,
-    name: 'Trà Cổ Thụ Tà Xùa Thiên Cổ',
-    age: 2000,
-    price: 120000000,
-    rentPrice: 3500000,
+    name: 'Tour Săn Mây Bình Minh Tà Xùa',
+    age: 5, // 5 giờ
+    price: 690000,
+    rentPrice: 120000, // thuê áo ấm/phụ kiện
     status: 'available' as const,
-    image: 'https://i.pinimg.com/736x/f8/f1/4a/f8f14ac2e52b2f37db6acbe9b26b8702.jpg',
-    location: 'Đỉnh Tà Xùa, Yên Bái',
-    category: 'ta-xua',
-    rarity: 'Huyền thoại'
+    image: 'https://i.pinimg.com/1200x/ea/98/a7/ea98a74048e3ab2b686b8f1f97a63f34.jpg',
+    location: 'Điểm hẹn trung tâm Mộc Châu',
+    category: 'tour',
+    rarity: 'Cực hot'
   },
   {
     id: 3,
-    name: 'Trà Cổ Thụ Hoàng Su Phì',
-    age: 800,
-    price: 35000000,
-    rentPrice: 1200000,
-    status: 'rented' as const,
+    name: 'Thuê Xe Máy + Bộ Camping (Cứu hộ 24/7)',
+    age: 1, // 1 ngày
+    price: 180000,
+    rentPrice: 50000, // phụ kiện từ
+    status: 'rented' as const, // tạm hết dòng xe hot
     image: 'https://i.pinimg.com/1200x/c0/3e/fe/c03efedc543c2a972cb2faf38bda98fd.jpg',
-    location: 'Hoàng Su Phì, Hà Giang',
-    category: 'hoang-su-phi',
-    rarity: 'Cực hiếm'
+    location: 'Thảo nguyên Mộc Châu',
+    category: 'rentals',
+    rarity: 'Bản địa'
   },
   {
     id: 4,
-    name: 'Trà Cổ Thụ Mộc Châu Cổ Điển',
-    age: 600,
-    price: 25000000,
-    rentPrice: 800000,
+    name: 'Vé Lễ Hội Hoa Mận + Shuttle Homestay',
+    age: 1, // 1 ngày
+    price: 250000,
+    rentPrice: 0,
     status: 'available' as const,
     image: 'https://i.pinimg.com/1200x/ea/98/a7/ea98a74048e3ab2b686b8f1f97a63f34.jpg',
-    location: 'Cao nguyên Mộc Châu, Sơn La',
-    category: 'moc-chau',
-    rarity: 'Quý hiếm'
+    location: 'Thung lũng Nà Ka, Mộc Châu',
+    category: 'event',
+    rarity: 'Theo mùa'
   },
   {
     id: 5,
-    name: 'Trà Cổ Thụ Tân Cương Hoàng Kim',
-    age: 1000,
-    price: 55000000,
-    rentPrice: 1800000,
-    status: 'sold' as const,
+    name: 'Đặt Bàn Acoustic Night + Trang Trí Sinh Nhật',
+    age: 3, // 3 giờ
+    price: 300000, // set từ
+    rentPrice: 0,
+    status: 'sold' as const, // sold-out suất tối nay
     image: 'https://i.pinimg.com/736x/f8/f1/4a/f8f14ac2e52b2f37db6acbe9b26b8702.jpg',
-    location: 'Tân Cương, Thái Nguyên',
-    category: 'tan-cuong',
-    rarity: 'Cực hiếm'
+    location: 'Khu trung tâm Mộc Châu',
+    category: 'food',
+    rarity: 'Cực hot'
   },
   {
     id: 6,
-    name: 'Trà Cổ Thụ Phú Thọ Linh Thiêng',
-    age: 700,
-    price: 30000000,
-    rentPrice: 1000000,
+    name: 'Đặc Sản Theo Mùa: Mận/Chè/Dâu – Ship Toàn Quốc',
+    age: 0, // đơn hàng
+    price: 199000, // combo nhỏ từ
+    rentPrice: 30000, // phí gói/ship phụ
     status: 'available' as const,
-    image: 'https://i.pinimg.com/1200x/c0/3e/fe/c03efedc543c2a972cb2faf38bda98fd.jpg',
-    location: 'Đất Tổ Phú Thọ',
-    category: 'phu-tho',
-    rarity: 'Quý hiếm'
+    image: 'https://i.pinimg.com/1200x/98/85/f3/9885f38dc02d4aad94ffe92bfc728894.jpg',
+    location: 'Kho đối tác Mộc Châu',
+    category: 'specialty',
+    rarity: 'Bản địa'
   }
 ];
 
@@ -90,26 +90,34 @@ const Products = () => {
   });
 
   const filteredProducts = products.filter(product => {
-    const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         product.location.toLowerCase().includes(searchTerm.toLowerCase());
-    
+    const matchesSearch =
+      product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      product.location.toLowerCase().includes(searchTerm.toLowerCase());
+
     const matchesCategory = !filters.category || product.category === filters.category;
     const matchesStatus = !filters.status || product.status === filters.status;
     const matchesLocation = !filters.location || product.location.includes(filters.location);
-    
+
     let matchesAge = true;
     if (filters.ageRange) {
       const [min, max] = filters.ageRange.split('-').map(Number);
       matchesAge = product.age >= min && (max ? product.age <= max : true);
     }
-    
+
     let matchesPrice = true;
     if (filters.priceRange) {
       const [min, max] = filters.priceRange.split('-').map(Number);
       matchesPrice = product.price >= min && (max ? product.price <= max : true);
     }
-    
-    return matchesSearch && matchesCategory && matchesStatus && matchesLocation && matchesAge && matchesPrice;
+
+    return (
+      matchesSearch &&
+      matchesCategory &&
+      matchesStatus &&
+      matchesLocation &&
+      matchesAge &&
+      matchesPrice
+    );
   });
 
   return (
@@ -120,19 +128,19 @@ const Products = () => {
           <div className="absolute top-10 left-10 text-6xl opacity-10 animate-sway">🌲</div>
           <div className="absolute bottom-10 right-10 text-5xl opacity-10 animate-float">🏔️</div>
         </div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-forest-800/50 backdrop-blur-sm rounded-full mb-6 border border-forest-600/30">
             <TreePine className="h-4 w-4 text-forest-400" />
-            <span className="text-forest-200 text-sm font-medium">Bộ sưu tập đặc biệt</span>
+            <span className="text-forest-200 text-sm font-medium">Danh mục trải nghiệm</span>
           </div>
-          
+
           <h1 className="text-4xl lg:text-6xl font-nature font-bold text-white mb-6">
-            Rừng Trà Cổ Thụ
-            <span className="block text-forest-300">Huyền Thoại</span>
+            CHILL Mộc Châu
+            <span className="block text-forest-300">Bản Địa – Mùa Vụ – Rõ Ràng</span>
           </h1>
           <p className="text-xl text-forest-200 max-w-3xl mx-auto">
-            Khám phá {products.length} cây trà cổ thụ quý hiếm từ những đỉnh núi cao nhất Việt Nam
+            Khám phá {products.length} trải nghiệm nổi bật: lưu trú, tour/hoạt động, ăn uống, đặc sản, thuê xe và vé sự kiện.
           </p>
         </div>
       </div>
@@ -144,7 +152,7 @@ const Products = () => {
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-forest-400" />
             <input
               type="text"
-              placeholder="Tìm kiếm cây trà huyền thoại..."
+              placeholder="Tìm kiếm trải nghiệm (homestay, tour, vé, thuê xe, ẩm thực...)"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-12 pr-4 py-4 bg-white/90 backdrop-blur-sm border border-forest-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent shadow-lg text-forest-800 placeholder-forest-500"
@@ -162,6 +170,7 @@ const Products = () => {
         {/* Filter Panel */}
         {showFilter && (
           <div className="mb-12 animate-fade-up">
+            {/* Giữ nguyên component, field ageRange ~= thời lượng; category như trên */}
             <ProductFilter filters={filters} onFiltersChange={setFilters} />
           </div>
         )}
@@ -170,11 +179,11 @@ const Products = () => {
         <div className="mb-8">
           <div className="flex items-center justify-between">
             <p className="text-forest-700 font-medium">
-              Hiển thị {filteredProducts.length} cây trà cổ thụ
+              Hiển thị {filteredProducts.length} trải nghiệm
             </p>
             <div className="flex items-center space-x-2 text-sm text-forest-600">
               <Mountain className="h-4 w-4" />
-              <span>Từ những đỉnh núi cao nhất</span>
+              <span>Gợi ý theo mùa & địa điểm gần</span>
             </div>
           </div>
         </div>
@@ -197,10 +206,10 @@ const Products = () => {
           <div className="text-center py-20">
             <div className="text-6xl mb-6">🌲</div>
             <h3 className="text-2xl font-nature font-bold text-forest-800 mb-4">
-              Không tìm thấy cây trà phù hợp
+              Không tìm thấy trải nghiệm phù hợp
             </h3>
             <p className="text-forest-600 mb-8 max-w-md mx-auto">
-              Hãy thử điều chỉnh bộ lọc hoặc từ khóa tìm kiếm để khám phá những cây trà cổ thụ khác.
+              Hãy điều chỉnh bộ lọc hoặc từ khóa để khám phá thêm homestay, tour, vé sự kiện, thuê xe hay đặc sản.
             </p>
             <button
               onClick={() => {

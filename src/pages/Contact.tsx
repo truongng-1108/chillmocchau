@@ -28,7 +28,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Địa chỉ',
-      content: 'Vùng núi Hoàng Liên Sơn',
+      content: 'Vùng núi Mộc Châu',
       subContent: 'Lào Cai, Việt Nam',
       color: 'from-forest-500 to-moss-500'
     },
@@ -42,8 +42,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'hello@seeme.vn',
-      subContent: 'support@seeme.vn',
+      content: 'hello@Chill.vn',
+      subContent: 'support@Chill.vn',
       color: 'from-earth-500 to-earth-600'
     },
     {
@@ -73,7 +73,7 @@ const Contact = () => {
           
           <h1 className="text-4xl lg:text-6xl font-nature font-bold text-white mb-6">
             Liên Hệ Với
-            <span className="block text-forest-300">SEEME</span>
+            <span className="block text-forest-300">Chill</span>
           </h1>
           <p className="text-xl text-forest-200 max-w-3xl mx-auto">
             Chúng tôi luôn sẵn sàng hỗ trợ và tư vấn cho bạn về dịch vụ chăm sóc 
@@ -217,7 +217,7 @@ const Contact = () => {
                     <Mountain className="h-10 w-10 text-white" />
                   </div>
                   <div className="text-earth-800 font-nature font-bold text-lg">
-                    Vùng núi Hoàng Liên Sơn
+                    Vùng núi Mộc Châu
                   </div>
                   <div className="text-earth-600">
                     Lào Cai, Việt Nam
@@ -233,7 +233,7 @@ const Contact = () => {
                   <TreePine className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-nature font-bold text-xl text-forest-900">
-                  Tại sao chọn SEEME?
+                  Tại sao chọn Chill?
                 </h3>
               </div>
               <ul className="space-y-4 text-forest-700">

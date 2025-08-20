@@ -3,35 +3,51 @@ import Card from '../ui/Card';
 
 const services = [
   {
-    icon: TreePine,
-    title: 'Chăm Sóc Rừng Trà',
-    description: 'Đội ngũ chuyên gia chăm sóc cây 24/7 với quy trình khoa học và tình yêu thiên nhiên.',
-    features: ['Tưới nước tự động', 'Bón phân hữu cơ', 'Kiểm tra sức khỏe định kỳ'],
-    color: 'from-forest-500 to-moss-500',
-    bgColor: 'forest'
+    icon: Users,
+    title: 'Ăn Uống & Giải Trí',
+    description: 'Đặt bàn, gọi món QR, phòng VIP và sự kiện nhỏ gọn – rõ ràng chính sách cọc/no‑show.',
+    features: ['Đặt bàn theo ca', 'QR order tại bàn', 'Phòng VIP / trang trí'],
+    color: 'from-rose-500 to-orange-500',
+    bgColor: 'default'
   },
   {
     icon: Shield,
-    title: 'Bảo Vệ Toàn Diện',
-    description: 'Hệ thống bảo hiểm và bảo vệ 100% giá trị, đảm bảo an toàn tuyệt đối cho cây trà.',
-    features: ['Bảo hiểm thiên tai', 'Bảo vệ 24/7', 'Hỗ trợ khẩn cấp'],
-    color: 'from-mountain-500 to-mountain-600',
+    title: 'Đặc Sản & Giao Hàng',
+    description: 'Đặt mua đặc sản Mộc Châu, ship nội khu/xa, theo dõi đơn minh bạch.',
+    features: ['Giỏ quà theo mùa', 'Pre‑order mận/dâu/chè', 'Tracking giao xa'],
+    color: 'from-amber-500 to-yellow-600',
     bgColor: 'mountain'
   },
   {
+    icon: TreePine,
+    title: 'Lưu Trú (Homestay/Hotel)',
+    description: 'Phòng theo ngày, giá động cuối tuần/lễ, add‑on BBQ – chụp ảnh – babysitting.',
+    features: ['Honeymoon/Family', 'BBQ & lửa trại', 'Trang trí phòng'],
+    color: 'from-forest-500 to-moss-600',
+    bgColor: 'forest'
+  },
+  {
     icon: Eye,
-    title: 'Theo Dõi Thông Minh',
-    description: 'Công nghệ IoT và AI giúp bạn theo dõi cây mọi lúc mọi nơi qua ứng dụng di động.',
-    features: ['Camera 4K 24/7', 'Cảm biến thông minh', 'Báo cáo AI'],
-    color: 'from-earth-500 to-earth-600',
+    title: 'Tour & Hoạt Động',
+    description: 'Tour cố định / custom: săn mây, trekking, workshop văn hoá – an toàn & rõ điều kiện.',
+    features: ['Guide đa ngôn ngữ', 'Trang phục dân tộc', 'Bảo hiểm du lịch'],
+    color: 'from-sky-500 to-indigo-600',
     bgColor: 'earth'
   },
   {
-    icon: Users,
-    title: 'Tư Vấn Chuyên Gia',
-    description: 'Đội ngũ chuyên gia nông nghiệp và phong thủy tư vấn miễn phí suốt đời.',
-    features: ['Tư vấn kỹ thuật', 'Phong thủy cây trà', 'Hỗ trợ online'],
-    color: 'from-moss-500 to-forest-600',
+    icon: Mountain,
+    title: 'Thuê Xe & Vận Tải',
+    description: 'Thuê xe máy/ô tô/ATV theo ngày, hợp đồng điện tử, cứu hộ 24/7, phụ kiện đầy đủ.',
+    features: ['Giao/nhận tận nơi', 'Biên bản tình trạng', 'Fuel policy minh bạch'],
+    color: 'from-teal-500 to-cyan-600',
+    bgColor: 'default'
+  },
+  {
+    icon: Leaf,
+    title: 'Vé Sự Kiện & Festival',
+    description: 'Mua vé theo hạng/khung giờ, vào cổng bằng QR (offline fallback), combo shuttle–homestay.',
+    features: ['QR check‑in', 'Combo vé + shuttle', 'Thuê trang phục tại cổng'],
+    color: 'from-violet-500 to-fuchsia-600',
     bgColor: 'default'
   }
 ];
@@ -45,22 +61,22 @@ const Services = () => {
         <div className="absolute bottom-20 right-10 text-5xl opacity-10 animate-float">🏔️</div>
         <div className="absolute top-1/2 left-1/4 text-4xl opacity-5 animate-wind">🌿</div>
       </div>
-      
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-forest-800/50 backdrop-blur-sm rounded-full mb-6 border border-forest-600/30">
             <Leaf className="h-4 w-4 text-forest-400" />
-            <span className="text-forest-200 text-sm font-medium">Dịch vụ chuyên nghiệp</span>
+            <span className="text-forest-200 text-sm font-medium">Dịch vụ CHILL Mộc Châu</span>
           </div>
-          
+
           <h2 className="text-4xl lg:text-6xl font-nature font-bold text-white mb-6">
-            Chăm Sóc Như
-            <span className="block text-forest-300">Báu Vật Thiên Nhiên</span>
+            Trải Nghiệm Bản Địa
+            <span className="block text-forest-300">Mùa Vụ – Rõ Ràng – Kết Nối</span>
           </h2>
           <p className="text-xl text-forest-200 max-w-3xl mx-auto leading-relaxed">
-            Mỗi cây trà cổ thụ là một kho báu của thiên nhiên. Chúng tôi cam kết mang đến 
-            dịch vụ chăm sóc tốt nhất với công nghệ hiện đại và tình yêu thiên nhiên.
+            Bao quát từ bên cung đến bên cầu: ăn uống, đặc sản, lưu trú, tour/hoạt động, thuê xe và vé sự kiện –
+            minh bạch chính sách, dễ ghép combo, thuận tiện cho hành trình Mộc Châu.
           </p>
         </div>
 
@@ -77,7 +93,7 @@ const Services = () => {
               <div className={`w-20 h-20 bg-gradient-to-br ${service.color} rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500 shadow-2xl`}>
                 <service.icon className="h-10 w-10 text-white" />
               </div>
-              
+
               {/* Content */}
               <h3 className="font-nature font-semibold text-xl text-white mb-4 group-hover:text-forest-200 transition-colors duration-300">
                 {service.title}
@@ -85,7 +101,7 @@ const Services = () => {
               <p className="text-forest-200 mb-6 leading-relaxed">
                 {service.description}
               </p>
-              
+
               {/* Features */}
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
@@ -95,7 +111,7 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-              
+
               {/* Decorative elements */}
               <div className="absolute top-4 right-4 w-2 h-2 bg-forest-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-4 left-4 w-1 h-1 bg-moss-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

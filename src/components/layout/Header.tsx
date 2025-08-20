@@ -19,7 +19,6 @@ const Header = () => {
     { name: 'Trang chủ', href: '/', current: location.pathname === '/' },
     { name: 'Rừng Trà', href: '/products', current: location.pathname === '/products' },
     { name: 'Dịch vụ', href: '/services', current: location.pathname === '/services' },
-    { name: 'Cây của tôi', href: '/my-trees', current: location.pathname === '/my-trees' },
     { name: 'Liên hệ', href: '/contact', current: location.pathname === '/contact' },
   ];
 
@@ -38,8 +37,8 @@ const Header = () => {
               <Leaf className="absolute -top-1 -right-1 h-4 w-4 text-moss-400 animate-pulse" />
             </div>
             <div className="flex flex-col">
-              <span className="font-nature font-bold text-2xl text-white tracking-wider">SEEME</span>
-              <span className="text-xs text-forest-300 -mt-1">Rừng Trà Cổ Thụ</span>
+              <span className="font-nature font-bold text-2xl text-white tracking-wider">Chill</span>
+              <span className="text-xs text-forest-300 -mt-1">Mộc Châu</span>
             </div>
           </Link>
 

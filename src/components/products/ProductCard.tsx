@@ -139,22 +139,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           {/* Shimmer effect */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
         </Link>
-        
-        {/* Rent Button */}
-        {product.status === 'available' && (
-          <Link
-            to={`/tree-rental/${product.id}`}
-            className="block w-full text-center bg-gradient-to-r from-vintage-600 to-vintage-700 text-white py-3 rounded-2xl hover:from-vintage-500 hover:to-vintage-600 transition-all duration-300 font-medium shadow-vintage hover:shadow-xl hover:scale-105 relative overflow-hidden mt-3"
-          >
-            <span className="flex items-center justify-center space-x-2">
-              <Crown className="h-4 w-4 flex-shrink-0" />
-              <span className="whitespace-nowrap">Đăng ký thuê</span>
-            </span>
-            
-            {/* Shimmer effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-          </Link>
-        )}
       </div>
     </div>
   );

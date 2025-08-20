@@ -455,8 +455,8 @@ const Auth = () => {
                 <Mountain className="absolute -bottom-2 -left-2 h-5 w-5 text-mountain-400 opacity-60" />
               </div>
               <div className="flex flex-col">
-                <span className="font-elegant font-bold text-4xl text-white tracking-wider">SEEME</span>
-                <span className="text-sm text-forest-300 -mt-1 font-nature">Rừng Trà Cổ Thụ</span>
+                <span className="font-elegant font-bold text-4xl text-white tracking-wider">Chill</span>
+                <span className="text-sm text-forest-300 -mt-1 font-nature">Mộc Châu</span>
               </div>
             </div>
           </div>

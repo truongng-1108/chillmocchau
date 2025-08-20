@@ -6,7 +6,7 @@ const testimonials = [
     id: 1,
     name: 'Nguyễn Văn Minh',
     position: 'Doanh nhân, Hà Nội',
-    content: 'SEEME đã mang đến cho tôi những cây trà cổ thụ tuyệt vời. Không chỉ đẹp mà còn mang lại năng lượng tích cực cho không gian làm việc. Dịch vụ chăm sóc rất chuyên nghiệp.',
+    content: 'Chill đã mang đến cho tôi những cây trà cổ thụ tuyệt vời. Không chỉ đẹp mà còn mang lại năng lượng tích cực cho không gian làm việc. Dịch vụ chăm sóc rất chuyên nghiệp.',
     rating: 5,
     avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100',
     treeAge: '800 năm'
@@ -24,7 +24,7 @@ const testimonials = [
     id: 3,
     name: 'Lê Hoàng Nam',
     position: 'Nhà sưu tập, TP.HCM',
-    content: 'Bộ sưu tập cây trà cổ thụ của SEEME rất đa dạng và chất lượng. Mỗi cây đều có câu chuyện riêng, được chăm sóc tận tâm. Tôi đã sở hữu 5 cây và đều rất hài lòng.',
+    content: 'Bộ sưu tập cây trà cổ thụ của Chill rất đa dạng và chất lượng. Mỗi cây đều có câu chuyện riêng, được chăm sóc tận tâm. Tôi đã sở hữu 5 cây và đều rất hài lòng.',
     rating: 5,
     avatar: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=100',
     treeAge: '1200 năm'
@@ -53,7 +53,7 @@ const Testimonials = () => {
           </h2>
           <p className="text-xl text-forest-700 max-w-3xl mx-auto leading-relaxed">
             Lắng nghe những chia sẻ chân thực từ khách hàng đã tin tưởng và đồng hành 
-            cùng SEEME trong hành trình khám phá rừng trà cổ thụ.
+            cùng Chill trong hành trình khám phá Mộc Châu.
           </p>
         </div>
 

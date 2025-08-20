@@ -4,30 +4,36 @@ import { Star, Quote, TreePine, Leaf } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    name: 'Nguyễn Văn Minh',
-    position: 'Doanh nhân, Hà Nội',
-    content: 'SEEME đã mang đến cho tôi những cây trà cổ thụ tuyệt vời. Không chỉ đẹp mà còn mang lại năng lượng tích cực cho không gian làm việc. Dịch vụ chăm sóc rất chuyên nghiệp.',
+    name: 'Phạm Thu Hà',
+    position: 'Gia đình 4 người, Hà Nội',
+    content:
+      'Đặt homestay view đồi chè 2 đêm qua CHILL rất mượt. BBQ tối có sẵn set, sáng hôm sau có bạn photographer hướng dẫn chụp ảnh với trang phục dân tộc. Chính sách rõ ràng, check‑in bằng QR nhanh.',
     rating: 5,
-    avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100',
-    treeAge: '800 năm'
+    avatar:
+      'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100',
+    treeAge: 'Homestay + BBQ • 2N1Đ'
   },
   {
     id: 2,
-    name: 'Trần Thị Lan Anh',
-    position: 'Chủ resort, Đà Lạt',
-    content: 'Thuê cây trang trí cho resort, khách hàng rất ấn tượng với vẻ đẹp cổ kính và huyền bí. Hệ thống theo dõi online giúp tôi yên tâm về chất lượng cây.',
+    name: 'Ngô Đức Lâm',
+    position: 'Nhóm phượt 6 người, TP.HCM',
+    content:
+      'Thuê xe máy + bộ camping ngay trên app, có biên bản tình trạng và cứu hộ 24/7 nên rất yên tâm. Hôm sau đặt thêm tour săn mây Tà Xùa, guide nhiệt tình, linh hoạt khi thời tiết đổi.',
     rating: 5,
-    avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100',
-    treeAge: '600 năm'
+    avatar:
+      'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100',
+    treeAge: 'Thuê xe + Tour săn mây'
   },
   {
     id: 3,
-    name: 'Lê Hoàng Nam',
-    position: 'Nhà sưu tập, TP.HCM',
-    content: 'Bộ sưu tập cây trà cổ thụ của SEEME rất đa dạng và chất lượng. Mỗi cây đều có câu chuyện riêng, được chăm sóc tận tâm. Tôi đã sở hữu 5 cây và đều rất hài lòng.',
+    name: 'Trần Khánh Vy',
+    position: 'Cặp đôi, Đà Nẵng',
+    content:
+      'Combo vé lễ hội hoa mận + shuttle + giảm giá homestay quá tiện. Tối đặt bàn acoustic tại quán đối tác qua QR, có trang trí sinh nhật và bánh theo chủ đề—mọi thứ rất chỉn chu.',
     rating: 5,
-    avatar: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=100',
-    treeAge: '1200 năm'
+    avatar:
+      'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=100',
+    treeAge: 'Vé festival + Shuttle'
   }
 ];
 
@@ -38,35 +44,35 @@ const NatureTestimonials = () => {
       <div className="absolute inset-0 wood-grain opacity-20" />
       <div className="absolute top-20 right-10 text-7xl opacity-10 animate-float">🌿</div>
       <div className="absolute bottom-20 left-10 text-8xl opacity-10 animate-sway">🍃</div>
-      
+
       {/* Torn paper sections */}
       <div className="absolute top-0 left-0 w-2/3 h-24 bg-vintage-200/30 torn-paper" />
       <div className="absolute bottom-0 right-0 w-full h-32 bg-forest-100/20 torn-paper transform rotate-180" />
-      
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center space-x-3 px-6 py-3 bg-forest-100/80 backdrop-blur-sm rounded-full mb-8 border border-forest-200/50">
             <TreePine className="h-5 w-5 text-forest-600 animate-branch-sway" />
-            <span className="text-forest-700 text-sm font-nature font-medium">Câu chuyện khách hàng</span>
+            <span className="text-forest-700 text-sm font-nature font-medium">Câu chuyện du khách</span>
             <Leaf className="h-4 w-4 text-forest-500 animate-float" />
           </div>
-          
+
           <h2 className="font-elegant font-bold text-forest-900 mb-8">
-            <span className="block text-5xl lg:text-7xl">Những Trải Nghiệm</span>
-            <span className="block text-4xl lg:text-6xl text-forest-700 mt-2">Đáng Nhớ</span>
+            <span className="block text-5xl lg:text-7xl">Trải Nghiệm Bản Địa</span>
+            <span className="block text-4xl lg:text-6xl text-forest-700 mt-2">Đáng Nhớ Tại Mộc Châu</span>
           </h2>
-          
+
           {/* Decorative divider */}
           <div className="flex items-center justify-center space-x-4 mb-8">
             <div className="w-24 h-1 bg-gradient-to-r from-transparent via-forest-400 to-transparent rounded-full" />
             <Quote className="h-6 w-6 text-forest-400" />
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-vintage-400 to-transparent rounded-full" />
           </div>
-          
+
           <p className="text-xl text-forest-700 max-w-3xl mx-auto leading-relaxed font-nature">
-            Lắng nghe những chia sẻ chân thực từ khách hàng đã tin tưởng và đồng hành 
-            cùng SEEME trong hành trình khám phá rừng trà cổ thụ.
+            Những phản hồi chân thật sau khi đặt homestay, tour, thuê xe hay vé sự kiện qua CHILL—
+            mọi thứ gọn gàng, chính sách rõ, kết nối dịch vụ mượt mà.
           </p>
         </div>
 
@@ -85,25 +91,25 @@ const NatureTestimonials = () => {
                 <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-forest-500 to-forest-600 rounded-full flex items-center justify-center shadow-lg">
                   <Quote className="h-6 w-6 text-white" />
                 </div>
-                
-                {/* Tree age badge */}
+
+                {/* Experience badge (đổi nội dung, giữ vị trí/kiểu) */}
                 <div className="absolute -top-3 -right-3 px-4 py-2 bg-gradient-to-r from-vintage-500 to-vintage-600 text-white text-sm font-nature font-medium rounded-full shadow-lg">
-                  Cây {testimonial.treeAge}
+                  {testimonial.treeAge}
                 </div>
-                
+
                 {/* Content */}
                 <div className="pt-4 space-y-6">
                   <p className="text-forest-800 font-nature italic text-lg leading-relaxed group-hover:text-forest-700 transition-colors duration-300">
                     "{testimonial.content}"
                   </p>
-                  
+
                   {/* Rating */}
                   <div className="flex justify-center space-x-1">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  
+
                   {/* Author */}
                   <div className="flex items-center space-x-4 pt-4 border-t border-forest-200/50">
                     <div className="relative">
@@ -126,11 +132,11 @@ const NatureTestimonials = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Decorative elements */}
                 <div className="absolute top-6 right-6 w-3 h-3 bg-vintage-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-float" />
                 <div className="absolute bottom-6 left-6 w-2 h-2 bg-forest-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
+
                 {/* Leaf decoration */}
                 <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <Leaf className="h-4 w-4 text-forest-400 animate-float" />

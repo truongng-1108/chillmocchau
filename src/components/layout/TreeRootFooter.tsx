@@ -32,8 +32,8 @@ const TreeRootFooter = () => {
                 <Mountain className="absolute -bottom-1 -left-1 h-4 w-4 text-mountain-400 opacity-60" />
               </div>
               <div className="flex flex-col">
-                <span className="font-elegant font-bold text-3xl text-white tracking-wider">SEEME</span>
-                <span className="text-sm text-forest-300 -mt-1 font-nature">Rừng Trà Cổ Thụ</span>
+                <span className="font-elegant font-bold text-3xl text-white tracking-wider">Chill</span>
+                <span className="text-sm text-forest-300 -mt-1 font-nature">Mộc Châu</span>
               </div>
             </div>
             
@@ -65,7 +65,7 @@ const TreeRootFooter = () => {
               <li>
                 <Link to="/products" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
                   <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4 group-hover:scale-150 transition-transform duration-300"></span>
-                  Rừng Trà Cổ Thụ
+                  Mộc Châu
                 </Link>
               </li>
               <li>
@@ -81,7 +81,7 @@ const TreeRootFooter = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/my-trees" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
+                <Link to="/my-tour" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
                   <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4 group-hover:scale-150 transition-transform duration-300"></span>
                   Cây của tôi
                 </Link>
@@ -131,7 +131,7 @@ const TreeRootFooter = () => {
               <div className="flex items-start space-x-4 group">
                 <MapPin className="h-5 w-5 text-forest-400 mt-1 group-hover:text-forest-300 transition-colors duration-300" />
                 <span className="text-forest-300 group-hover:text-forest-200 transition-colors duration-300">
-                  Vùng núi Hoàng Liên Sơn<br />Lào Cai, Việt Nam
+                  Vùng núi Mộc Châu<br />Lào Cai, Việt Nam
                 </span>
               </div>
               <div className="flex items-center space-x-4 group">
@@ -143,7 +143,7 @@ const TreeRootFooter = () => {
               <div className="flex items-center space-x-4 group">
                 <Mail className="h-5 w-5 text-forest-400 group-hover:text-forest-300 transition-colors duration-300" />
                 <span className="text-forest-300 group-hover:text-forest-200 transition-colors duration-300">
-                  hello@seeme.vn
+                  hello@Chill.vn
                 </span>
               </div>
             </div>
@@ -157,7 +157,7 @@ const TreeRootFooter = () => {
           
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-forest-400 font-nature">
-              &copy; 2025 SEEME. Tất cả quyền được bảo lưu.
+              &copy; 2025 Chill. Tất cả quyền được bảo lưu.
             </p>
             <div className="flex items-center space-x-8 font-nature">
               <span className="text-forest-400 hover:text-forest-300 transition-colors duration-300 cursor-pointer">

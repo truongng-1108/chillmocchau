@@ -218,7 +218,7 @@ const Services = () => {
               Đặt Lịch Tư Vấn Miễn Phí
             </h2>
             <p className="text-earth-700 mb-8 text-lg leading-relaxed">
-              Chuyên gia của SEEME sẽ tư vấn chi tiết về nhu cầu chăm sóc 
+              Chuyên gia của Chill sẽ tư vấn chi tiết về nhu cầu chăm sóc 
               cây trà cổ thụ phù hợp với không gian và mong muốn của bạn
             </p>
             

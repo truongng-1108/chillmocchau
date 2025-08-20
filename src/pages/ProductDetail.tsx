@@ -18,7 +18,7 @@ const ProductDetail = () => {
     rentPrice: 2500000,
     status: 'available',
     location: 'Đỉnh Fansipan, Lào Cai',
-    origin: 'Vùng núi Hoàng Liên Sơn thiêng liêng',
+    origin: 'Vùng núi Mộc Châu thiêng liêng',
     rarity: 'Huyền thoại',
     images: [
       'https://i.pinimg.com/1200x/19/6c/12/196c120c0ebba026466d7ae73da3947a.jpg',
@@ -190,7 +190,7 @@ const ProductDetail = () => {
                 Sở hữu ngay
               </Button>
               <div>
-              <Link to={`/tree-rental/${product.id}`}>
+              <Link to={`/tour/${product.id}`}>
                 <Button size="xl" variant="outline" className="w-full border-moss-600 text-moss-600 hover:bg-moss-600">
                   Đăng ký thuê
                 </Button>

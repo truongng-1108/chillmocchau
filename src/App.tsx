@@ -5,12 +5,9 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
 import Services from './pages/Services';
-import MyTrees from './pages/MyTrees';
-import TreeDetail from './pages/TreeDetail';
 import Contact from './pages/Contact';
 import Auth from './pages/Auth';
 import Maps from './pages/Maps';
-import TreeRental from './pages/TreeRental';
 
 function App() {
   return (
@@ -26,12 +23,9 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/products/:id" element={<ProductDetail />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/my-trees" element={<MyTrees />} />
-            <Route path="/my-trees/:id" element={<TreeDetail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/maps" element={<Maps />} />
-            <Route path="/tree-rental/:id" element={<TreeRental />} />
           </Routes>
         </main>
         <TreeRootFooter />

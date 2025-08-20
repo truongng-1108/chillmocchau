@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  seeme-app:
+  Chill-app:
     build: .
     ports:
       - "8333:80"  # chỉ map port nội bộ

@@ -4,7 +4,7 @@ const Stats = () => {
   const stats = [
     {
       icon: TreePine,
-      number: '500+',
+      number: '50+',
       label: 'Cây trà cổ thụ',
       description: 'Được bảo tồn và chăm sóc',
       color: 'from-forest-500 to-moss-500'
@@ -18,7 +18,7 @@ const Stats = () => {
     },
     {
       icon: Users,
-      number: '1000+',
+      number: '100+',
       label: 'Khách hàng',
       description: 'Tin tưởng và đồng hành',
       color: 'from-earth-500 to-earth-600'
@@ -45,7 +45,7 @@ const Stats = () => {
             Hành Trình Của Chúng Tôi
           </h2>
           <p className="text-lg text-forest-700 max-w-2xl mx-auto">
-            Những con số ấn tượng trong hành trình bảo tồn và phát triển rừng trà cổ thụ
+            Những con số ấn tượng trong hành trình bảo tồn và phát triển Mộc Châu
           </p>
         </div>
 

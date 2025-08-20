@@ -52,9 +52,9 @@ const MysticalHero = () => {
             {/* Main Heading with Creative Typography */}
             <div className="space-y-3 lg:space-y-6">
               <h1 className="font-elegant font-bold leading-tight">
-                <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-white drop-shadow-2xl">SEEME</span>
+                <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-white drop-shadow-2xl">Chill</span>
                 <span className="block text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl text-forest-300 mt-1 lg:mt-4 font-nature">
-                  Rừng Trà Cổ Thụ
+                  Mộc Châu
                 </span>
                 <span className="block text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-vintage-200 mt-1 lg:mt-2 font-light">
                   Huyền Thoại
@@ -69,8 +69,8 @@ const MysticalHero = () => {
               </div>
               
               <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-forest-100 max-w-2xl leading-relaxed font-nature mx-auto lg:mx-0">
-                Hành trình khám phá những cây trà cổ thụ ngàn năm tuổi, 
-                ẩn mình trong những dãy núi hùng vĩ của Tây Bắc Việt Nam.
+                CHILL Mộc Châu – Hành trình khám phá rừng núi hùng vĩ, bản làng nguyên sơ và mùa hoa bốn mùa
+                nơi du khách tận hưởng homestay, tour trải nghiệm, ẩm thực và đặc sản địa phương trong không gian thân thiện, tin cậy.
               </p>
             </div>
             
@@ -103,24 +103,24 @@ const MysticalHero = () => {
             <div className="flex items-center justify-center lg:justify-start space-x-6 sm:space-x-8 lg:space-x-12 pt-4 lg:pt-8">
               <div className="text-center group">
                 <div className="relative">
-                  <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-forest-300 group-hover:text-forest-200 transition-colors duration-300">500+</div>
+                  <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-forest-300 group-hover:text-forest-200 transition-colors duration-300">50+</div>
                   <div className="absolute -top-1 -right-1 w-2 h-2 lg:w-3 lg:h-3 bg-forest-400 rounded-full animate-float" />
                 </div>
-                <div className="text-xs sm:text-sm text-forest-400 font-nature mt-1">Cây cổ thụ</div>
+                <div className="text-xs sm:text-sm text-forest-400 font-nature mt-1">Dịch vụ</div>
               </div>
               <div className="text-center group">
                 <div className="relative">
-                  <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-forest-300 group-hover:text-forest-200 transition-colors duration-300">1000+</div>
+                  <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-forest-300 group-hover:text-forest-200 transition-colors duration-300">100+</div>
                   <div className="absolute -top-1 -right-1 w-2 h-2 lg:w-3 lg:h-3 bg-vintage-400 rounded-full animate-float" style={{ animationDelay: '1s' }} />
                 </div>
-                <div className="text-xs sm:text-sm text-forest-400 font-nature mt-1">Năm tuổi</div>
+                <div className="text-xs sm:text-sm text-forest-400 font-nature mt-1">Địa điểm hot</div>
               </div>
               <div className="text-center group">
                 <div className="relative">
                   <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-forest-300 group-hover:text-forest-200 transition-colors duration-300">15+</div>
                   <div className="absolute -top-1 -right-1 w-2 h-2 lg:w-3 lg:h-3 bg-mountain-400 rounded-full animate-float" style={{ animationDelay: '2s' }} />
                 </div>
-                <div className="text-xs sm:text-sm text-forest-400 font-nature mt-1">Vùng núi</div>
+                <div className="text-xs sm:text-sm text-forest-400 font-nature mt-1">Kinh nghiệm</div>
               </div>
             </div>
           </div>
@@ -161,8 +161,8 @@ const MysticalHero = () => {
                     <Mountain className="h-5 lg:h-7 w-5 lg:w-7 text-white animate-float" />
                   </div>
                   <div>
-                    <div className="font-nature font-bold text-sm lg:text-base text-mountain-800">Vùng núi cao</div>
-                    <div className="text-xs lg:text-sm text-mountain-600">Hoàng Liên Sơn</div>
+                    <div className="font-nature font-bold text-sm lg:text-base text-mountain-800">Cao nguyên</div>
+                    <div className="text-xs lg:text-sm text-mountain-600">Mộc Châu</div>
                   </div>
                 </div>
               </div>

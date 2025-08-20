@@ -12,7 +12,7 @@ const featuredProducts = [
     rentPrice: 800000,
     status: 'available',
     image: 'https://i.pinimg.com/1200x/ea/98/a7/ea98a74048e3ab2b686b8f1f97a63f34.jpg',
-    location: 'Hoàng Liên Sơn, Lào Cai',
+    location: 'Mộc Châu, Lào Cai',
     featured: true,
     rarity: 'Cực hiếm'
   },

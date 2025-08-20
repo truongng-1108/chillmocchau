@@ -30,20 +30,20 @@ const Hero = () => {
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 px-4 py-2 bg-forest-800/30 backdrop-blur-sm rounded-full border border-forest-600/30">
               <TreePine className="h-4 w-4 text-forest-400" />
-              <span className="text-forest-200 text-sm font-medium">Khám phá rừng trà cổ thụ</span>
+              <span className="text-forest-200 text-sm font-medium">Khám phá Mộc Châu</span>
             </div>
 
             {/* Main heading */}
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-7xl font-nature font-bold text-white leading-tight">
-                <span className="block">SEEME</span>
+                <span className="block">Chill</span>
                 <span className="block text-4xl lg:text-5xl text-forest-300 mt-2">
                   Rừng Trà Huyền Thoại
                 </span>
               </h1>
               <p className="text-xl text-forest-200 max-w-2xl leading-relaxed">
-                Hành trình khám phá những cây trà cổ thụ ngàn năm tuổi, 
-                ẩn mình trong những dãy núi hùng vĩ của Tây Bắc Việt Nam.
+                CHILL Mộc Châu – Hành trình khám phá rừng núi hùng vĩ, bản làng nguyên sơ và mùa hoa bốn mùa
+                nơi du khách tận hưởng homestay, tour trải nghiệm, ẩm thực và đặc sản địa phương trong không gian thân thiện, tin cậy.
               </p>
             </div>
             
@@ -64,16 +64,16 @@ const Hero = () => {
             {/* Stats preview */}
             <div className="flex items-center space-x-12 pt-8">
               <div className="text-center group">
-                <div className="text-3xl font-bold text-forest-300 group-hover:text-forest-200 transition-colors duration-300">500+</div>
-                <div className="text-sm text-forest-400">Cây cổ thụ</div>
+                <div className="text-3xl font-bold text-forest-300 group-hover:text-forest-200 transition-colors duration-300">50+</div>
+                <div className="text-sm text-forest-400">Dịch vụ</div>
               </div>
               <div className="text-center group">
-                <div className="text-3xl font-bold text-forest-300 group-hover:text-forest-200 transition-colors duration-300">1000+</div>
-                <div className="text-sm text-forest-400">Năm tuổi</div>
+                <div className="text-3xl font-bold text-forest-300 group-hover:text-forest-200 transition-colors duration-300">100+</div>
+                <div className="text-sm text-forest-400">Địa điểm hot</div>
               </div>
               <div className="text-center group">
                 <div className="text-3xl font-bold text-forest-300 group-hover:text-forest-200 transition-colors duration-300">15+</div>
-                <div className="text-sm text-forest-400">Vùng núi</div>
+                <div className="text-sm text-forest-400">Kinh nghiệm</div>
               </div>
             </div>
           </div>
@@ -110,8 +110,8 @@ const Hero = () => {
                     <Mountain className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <div className="font-semibold text-mountain-800">Vùng núi cao</div>
-                    <div className="text-sm text-mountain-600">Hoàng Liên Sơn</div>
+                    <div className="font-semibold text-mountain-800">Cao nguyên</div>
+                    <div className="text-sm text-mountain-600">Mộc Châu</div>
                   </div>
                 </div>
               </div>

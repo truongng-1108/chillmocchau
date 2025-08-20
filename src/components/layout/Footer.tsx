@@ -22,13 +22,13 @@ const Footer = () => {
                 <Leaf className="absolute -top-1 -right-1 h-4 w-4 text-moss-400 animate-pulse" />
               </div>
               <div className="flex flex-col">
-                <span className="font-nature font-bold text-2xl text-white tracking-wider">SEEME</span>
-                <span className="text-xs text-forest-300 -mt-1">Rừng Trà Cổ Thụ</span>
+                <span className="font-nature font-bold text-2xl text-white tracking-wider">CHILL</span>
+                <span className="text-xs text-forest-300 -mt-1">Mộc Châu</span>
               </div>
             </div>
             <p className="text-forest-300 text-sm leading-relaxed">
-              Khám phá và bảo tồn những cây trà cổ thụ quý hiếm từ những dãy núi 
-              hùng vĩ, mang đến trải nghiệm thiên nhiên thuần khiết.
+              Nền tảng du lịch bản địa Mộc Châu: ăn uống, đặc sản, lưu trú, tour/hoạt động, thuê xe và vé sự kiện.
+              Đặt nhanh – chính sách rõ – QR check‑in mượt – combo theo mùa.
             </p>
             <div className="flex space-x-4">
               <div className="p-2 bg-forest-800/50 rounded-full hover:bg-forest-700/50 transition-colors duration-300 cursor-pointer group">
@@ -51,27 +51,27 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link to="/products" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
+                <Link to="/experiences" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
                   <span className="w-1 h-1 bg-moss-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
-                  Rừng Trà Cổ Thụ
+                  Trải nghiệm bản địa
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
                   <span className="w-1 h-1 bg-moss-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
-                  Dịch vụ chăm sóc
+                  Danh mục dịch vụ
                 </Link>
               </li>
               <li>
-                <Link to="/my-trees" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
+                <Link to="/combos" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
                   <span className="w-1 h-1 bg-moss-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
-                  Cây của tôi
+                  Combo theo mùa
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
+                <Link to="/support" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
                   <span className="w-1 h-1 bg-moss-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
-                  Liên hệ
+                  Hỗ trợ & liên hệ
                 </Link>
               </li>
             </ul>
@@ -86,19 +86,27 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="text-forest-300 flex items-center">
                 <span className="w-1 h-1 bg-moss-400 rounded-full mr-3"></span>
-                Bán cây trà cổ thụ
+                Ăn uống & giải trí
               </li>
               <li className="text-forest-300 flex items-center">
                 <span className="w-1 h-1 bg-moss-400 rounded-full mr-3"></span>
-                Cho thuê cây cảnh
+                Đặc sản & giao hàng
               </li>
               <li className="text-forest-300 flex items-center">
                 <span className="w-1 h-1 bg-moss-400 rounded-full mr-3"></span>
-                Chăm sóc chuyên nghiệp
+                Lưu trú (homestay/khách sạn)
               </li>
               <li className="text-forest-300 flex items-center">
                 <span className="w-1 h-1 bg-moss-400 rounded-full mr-3"></span>
-                Tư vấn phong thủy
+                Tour & hoạt động
+              </li>
+              <li className="text-forest-300 flex items-center">
+                <span className="w-1 h-1 bg-moss-400 rounded-full mr-3"></span>
+                Thuê xe & vận tải
+              </li>
+              <li className="text-forest-300 flex items-center">
+                <span className="w-1 h-1 bg-moss-400 rounded-full mr-3"></span>
+                Vé sự kiện & festival
               </li>
             </ul>
           </div>
@@ -113,7 +121,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3 group">
                 <MapPin className="h-4 w-4 text-forest-400 mt-0.5 group-hover:text-forest-300 transition-colors duration-300" />
                 <span className="text-forest-300 group-hover:text-forest-200 transition-colors duration-300">
-                  Vùng núi Hoàng Liên Sơn<br />Lào Cai, Việt Nam
+                  Cao nguyên Mộc Châu<br />Sơn La, Việt Nam
                 </span>
               </div>
               <div className="flex items-center space-x-3 group">
@@ -125,7 +133,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3 group">
                 <Mail className="h-4 w-4 text-forest-400 group-hover:text-forest-300 transition-colors duration-300" />
                 <span className="text-forest-300 group-hover:text-forest-200 transition-colors duration-300">
-                  hello@seeme.vn
+                  hello@chill.vn
                 </span>
               </div>
             </div>
@@ -136,7 +144,7 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-forest-700/50">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-forest-400 text-sm">
-              &copy; 2025 SEEME. Tất cả quyền được bảo lưu.
+              &copy; 2025 CHILL Mộc Châu. Tất cả quyền được bảo lưu.
             </p>
             <div className="flex items-center space-x-6 text-sm text-forest-400">
               <span className="hover:text-forest-300 transition-colors duration-300 cursor-pointer">Chính sách bảo mật</span>

@@ -31,11 +31,11 @@ const CTA = () => {
           
           <h2 className="text-4xl lg:text-6xl font-nature font-bold text-white mb-6">
             Sẵn Sàng Khám Phá
-            <span className="block text-forest-300">Rừng Trà Huyền Thoại?</span>
+            <span className="block text-forest-300">Mộc Châu Bản Địa?</span>
           </h2>
           <p className="text-xl text-forest-200 mb-12 leading-relaxed">
-            Hãy để SEEME đồng hành cùng bạn trong hành trình khám phá và sở hữu 
-            những cây trà cổ thụ quý hiếm nhất từ những đỉnh núi hùng vĩ.
+            CHILL Mộc Châu là nền tảng kết nối trọn gói: ăn uống, đặc sản, lưu trú, tour/hoạt động,
+            thuê xe và vé sự kiện. Đặt nhanh – chính sách rõ ràng – QR check‑in mượt mà – dễ ghép combo theo mùa.
           </p>
           
           {/* Action buttons */}
@@ -46,7 +46,7 @@ const CTA = () => {
                 icon={ArrowRight}
                 className="w-full sm:w-auto bg-gradient-to-r from-forest-500 to-moss-500 hover:from-forest-400 hover:to-moss-400"
               >
-                Khám phá rừng trà
+                Khám phá trải nghiệm
               </Button>
             </Link>
             <Link to="/contact">
@@ -56,7 +56,7 @@ const CTA = () => {
                 icon={Phone}
                 className="w-full sm:w-auto border-forest-400 text-forest-200 hover:bg-forest-400 hover:text-white"
               >
-                Tư vấn miễn phí
+                Tư vấn hành trình miễn phí
               </Button>
             </Link>
           </div>
@@ -68,24 +68,24 @@ const CTA = () => {
             <div className="w-20 h-20 bg-gradient-to-br from-forest-500 to-moss-500 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-2xl">
               <TreePine className="h-10 w-10 text-white" />
             </div>
-            <div className="text-3xl font-bold text-forest-300 mb-2 group-hover:text-forest-200 transition-colors duration-300">24/7</div>
-            <div className="text-forest-400">Chăm sóc chuyên nghiệp</div>
+            <div className="text-3xl font-bold text-forest-300 mb-2 group-hover:text-forest-200 transition-colors duration-300">6+</div>
+            <div className="text-forest-400">Nhóm dịch vụ bao phủ</div>
           </div>
           
           <div className="group">
             <div className="w-20 h-20 bg-gradient-to-br from-mountain-500 to-mountain-600 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-2xl">
               <Mountain className="h-10 w-10 text-white" />
             </div>
-            <div className="text-3xl font-bold text-forest-300 mb-2 group-hover:text-forest-200 transition-colors duration-300">100%</div>
-            <div className="text-forest-400">Bảo hành chất lượng</div>
+            <div className="text-3xl font-bold text-forest-300 mb-2 group-hover:text-forest-200 transition-colors duration-300">QR</div>
+            <div className="text-forest-400">Check‑in vé/booking mượt</div>
           </div>
           
           <div className="group">
             <div className="w-20 h-20 bg-gradient-to-br from-earth-500 to-earth-600 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-2xl">
               <Leaf className="h-10 w-10 text-white" />
             </div>
-            <div className="text-3xl font-bold text-forest-300 mb-2 group-hover:text-forest-200 transition-colors duration-300">20+</div>
-            <div className="text-forest-400">Năm kinh nghiệm</div>
+            <div className="text-3xl font-bold text-forest-300 mb-2 group-hover:text-forest-200 transition-colors duration-300">24/7</div>
+            <div className="text-forest-400">Hỗ trợ & cứu hộ thực địa</div>
           </div>
         </div>
       </div>

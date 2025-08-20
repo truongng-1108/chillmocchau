@@ -17,10 +17,9 @@ const ForestHeader = () => {
 
   const navigation = [
     { name: 'Trang chủ', href: '/', current: location.pathname === '/' },
-    { name: 'Rừng Trà', href: '/products', current: location.pathname === '/products' },
+    { name: 'Tour', href: '/products', current: location.pathname === '/products' },
     { name: 'Bản đồ', href: '/maps', current: location.pathname === '/maps' },
     { name: 'Dịch vụ', href: '/services', current: location.pathname === '/services' },
-    { name: 'Cây của tôi', href: '/my-trees', current: location.pathname === '/my-trees' },
     { name: 'Liên hệ', href: '/contact', current: location.pathname === '/contact' },
   ];
 
@@ -47,8 +46,8 @@ const ForestHeader = () => {
                 <Mountain className="absolute -bottom-1 -left-1 h-4 w-4 text-mountain-600 opacity-60" />
               </div>
               <div className="flex flex-col">
-                <span className="font-elegant font-bold text-3xl text-forest-800 tracking-wider">SEEME</span>
-                <span className="text-xs text-forest-600 -mt-1 font-nature">Rừng Trà Cổ Thụ</span>
+                <span className="font-elegant font-bold text-3xl text-forest-800 tracking-wider">Chill</span>
+                <span className="text-xs text-forest-600 -mt-1 font-nature">Mộc Châu</span>
               </div>
               
               {/* Decorative elements */}
