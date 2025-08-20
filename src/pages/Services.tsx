@@ -1,4 +1,5 @@
 import { Check, TreePine, Shield, Eye, Users, Calendar, Mountain, Leaf, Crown } from 'lucide-react';
+import { Car, Utensils, Gift, Ticket, Home, Camera } from 'lucide-react';
 import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
 
@@ -59,6 +60,116 @@ const services = [
   }
 ];
 
+const serviceCategories = [
+  {
+    id: 'accommodation',
+    name: 'Gói Lưu Trú Premium',
+    price: 1200000,
+    duration: 'đêm',
+    icon: Home,
+    features: [
+      'Homestay/Hotel view đồi chè',
+      'Phòng VIP với ban công riêng',
+      'BBQ + lửa trại tối',
+      'Trang trí phòng theo yêu cầu',
+      'Dịch vụ babysitting',
+      'Ăn sáng buffet đặc sản',
+      'Late check-out miễn phí'
+    ],
+    popular: false,
+    color: 'from-blue-500 to-indigo-500'
+  },
+  {
+    id: 'transport',
+    name: 'Gói Thuê Xe Toàn Diện',
+    price: 350000,
+    duration: 'ngày',
+    icon: Car,
+    features: [
+      'Xe máy/ô tô/ATV theo lựa chọn',
+      'Giao nhận tận nơi',
+      'Bảo hiểm + cứu hộ 24/7',
+      'Phụ kiện đầy đủ (mũ bảo hiểm, áo mưa)',
+      'Hướng dẫn lộ trình chi tiết',
+      'Fuel policy minh bạch',
+      'Hỗ trợ kỹ thuật tại chỗ'
+    ],
+    popular: true,
+    color: 'from-green-500 to-emerald-500'
+  },
+  {
+    id: 'dining',
+    name: 'Gói Ẩm Thực Bản Địa',
+    price: 450000,
+    duration: 'người',
+    icon: Utensils,
+    features: [
+      'Đặt bàn VIP tại nhà hàng đối tác',
+      'Menu đặc sản theo mùa',
+      'QR order tại bàn tiện lợi',
+      'Acoustic night + không gian riêng tư',
+      'Trang trí bàn theo sự kiện',
+      'Rượu cần + trà cổ thụ',
+      'Photographer ghi lại khoảnh khắc'
+    ],
+    popular: false,
+    color: 'from-orange-500 to-red-500'
+  },
+  {
+    id: 'specialty',
+    name: 'Gói Đặc Sản Theo Mùa',
+    price: 280000,
+    duration: 'combo',
+    icon: Gift,
+    features: [
+      'Mận/dâu/chè tươi theo mùa',
+      'Đóng gói quà tặng cao cấp',
+      'Ship toàn quốc + tracking',
+      'Pre-order cho mùa vụ',
+      'Tư vấn bảo quản sản phẩm',
+      'Chứng nhận nguồn gốc',
+      'Hoàn tiền nếu không hài lòng'
+    ],
+    popular: false,
+    color: 'from-purple-500 to-pink-500'
+  },
+  {
+    id: 'events',
+    name: 'Gói Vé Sự Kiện VIP',
+    price: 180000,
+    duration: 'vé',
+    icon: Ticket,
+    features: [
+      'Vé VIP các lễ hội/festival',
+      'QR check-in nhanh chóng',
+      'Shuttle bus từ homestay',
+      'Thuê trang phục dân tộc tại cổng',
+      'Combo vé + ăn uống',
+      'Chỗ ngồi ưu tiên',
+      'Quà lưu niệm độc quyền'
+    ],
+    popular: false,
+    color: 'from-teal-500 to-cyan-500'
+  },
+  {
+    id: 'photography',
+    name: 'Gói Chụp Ảnh Nghệ Thuật',
+    price: 890000,
+    duration: 'buổi',
+    icon: Camera,
+    features: [
+      'Photographer chuyên nghiệp',
+      'Trang phục dân tộc đầy đủ',
+      'Makeup + làm tóc cơ bản',
+      'Chụp tại 3-5 địa điểm đẹp',
+      'Edit ảnh chuyên nghiệp',
+      'Album kỷ niệm cao cấp',
+      'File gốc + bản quyền sử dụng'
+    ],
+    popular: true,
+    color: 'from-violet-500 to-purple-500'
+  }
+];
 const additionalServices = [
   {
     name: 'Tư vấn Lịch Trình',
@@ -177,14 +288,74 @@ const Services = () => {
           </div>
         </div>
 
+        {/* Service Categories */}
+        <div className="mb-20">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-nature font-bold text-forest-900 mb-4">
+              Dịch Vụ Chuyên Biệt
+            </h2>
+            <p className="text-lg text-forest-700 max-w-2xl mx-auto">
+              6 nhóm dịch vụ chính bao phủ mọi nhu cầu du lịch tại Mộc Châu
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {serviceCategories.map((service) => (
+              <Card 
+                key={service.id} 
+                variant="mountain"
+                className={`relative p-6 ${service.popular ? 'ring-4 ring-mountain-500 scale-105' : ''}`}
+                hover
+              >
+                {service.popular && (
+                  <div className="absolute -top-3 -right-3">
+                    <span className="bg-gradient-to-r from-mountain-600 to-mountain-700 text-white px-4 py-1 rounded-full text-xs font-medium shadow-lg">
+                      Hot
+                    </span>
+                  </div>
+                )}
+                
+                <div className="text-center mb-6">
+                  <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl`}>
+                    <service.icon className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-nature font-bold text-mountain-900 mb-3">
+                    {service.name}
+                  </h3>
+                  <div className="text-2xl font-bold text-mountain-800">
+                    {formatPrice(service.price)}đ
+                    <span className="text-sm font-normal text-mountain-600">/{service.duration}</span>
+                  </div>
+                </div>
+
+                <ul className="space-y-3 mb-6">
+                  {service.features.map((feature, index) => (
+                    <li key={index} className="flex items-start text-mountain-700 text-sm">
+                      <Check className="h-4 w-4 text-mountain-500 mr-2 flex-shrink-0 mt-0.5" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <Button 
+                  variant={service.popular ? 'mountain' : 'outline'} 
+                  size="md" 
+                  className="w-full"
+                >
+                  Đặt ngay
+                </Button>
+              </Card>
+            ))}
+          </div>
+        </div>
         {/* Additional Services */}
         <div className="mb-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-nature font-bold text-forest-900 mb-4">
-              Dịch Vụ Thêm
+              Dịch Vụ Hỗ Trợ
             </h2>
             <p className="text-lg text-forest-700 max-w-2xl mx-auto">
-              Các dịch vụ chuyên biệt để nâng cao trải nghiệm du lịch của bạn
+              Các dịch vụ bổ sung để hoàn thiện chuyến du lịch của bạn
             </p>
           </div>
           
