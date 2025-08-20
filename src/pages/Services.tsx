@@ -5,54 +5,54 @@ import Button from '../components/ui/Button';
 const services = [
   {
     id: 'basic',
-    name: 'Gói Rừng Xanh',
-    price: 500000,
-    duration: 'tháng',
+    name: 'Gói Khám Phá Cơ Bản',
+    price: 1500000,
+    duration: 'người',
     icon: TreePine,
     features: [
-      'Tưới nước 3 lần/tuần',
-      'Kiểm tra sức khỏe hàng tuần',
-      'Báo cáo tình trạng qua email',
-      'Hỗ trợ qua điện thoại',
-      'Bón phân 1 lần/tháng'
+      'Homestay 2N1Đ view đồi chè',
+      'Ăn sáng đặc sản địa phương',
+      'Tour tham quan 1 ngày',
+      'Hướng dẫn viên bản địa',
+      'Bảo hiểm du lịch cơ bản'
     ],
     popular: false,
     color: 'from-forest-500 to-moss-500'
   },
   {
     id: 'premium',
-    name: 'Gói Núi Thiêng',
-    price: 1200000,
-    duration: 'tháng',
+    name: 'Gói Trải Nghiệm Cao Cấp',
+    price: 2800000,
+    duration: 'người',
     icon: Mountain,
     features: [
-      'Tưới nước tự động hàng ngày',
-      'Kiểm tra sức khỏe 2 lần/tuần',
-      'Theo dõi qua camera 24/7',
-      'Báo cáo chi tiết hàng tuần',
-      'Bón phân hữu cơ chuyên dụng',
-      'Hỗ trợ kỹ thuật 24/7',
-      'Bảo hiểm cây trồng cơ bản'
+      'Homestay 3N2Đ phòng VIP',
+      'Tour săn mây bình minh Tà Xùa',
+      'BBQ tối + acoustic night',
+      'Chụp ảnh trang phục dân tộc',
+      'Thuê xe máy + phụ kiện',
+      'Hỗ trợ 24/7 + cứu hộ',
+      'Bảo hiểm du lịch toàn diện'
     ],
     popular: true,
     color: 'from-mountain-500 to-mountain-600'
   },
   {
     id: 'vip',
-    name: 'Gói Hoàng Gia',
-    price: 2500000,
-    duration: 'tháng',
+    name: 'Gói Trọn Gói VIP',
+    price: 4500000,
+    duration: 'người',
     icon: Crown,
     features: [
-      'Chăm sóc riêng biệt 1-1',
-      'Kỹ thuật viên chuyên trách',
-      'Hệ thống IoT cao cấp',
-      'Báo cáo realtime',
-      'Tư vấn phong thủy chuyên sâu',
-      'Chăm sóc theo từng mùa',
-      'Bảo hiểm toàn diện',
-      'Dịch vụ vận chuyển miễn phí',
-      'Tư vấn chuyên gia 24/7'
+      'Hướng dẫn viên riêng 1-1',
+      'Lịch trình tùy chỉnh cá nhân',
+      'Tất cả tour + hoạt động',
+      'Ăn uống cao cấp mọi bữa',
+      'Vé tham gia mọi lễ hội',
+      'Đặc sản mang về theo mùa',
+      'Xe riêng + tài xế',
+      'Phòng suite view núi',
+      'Concierge 24/7'
     ],
     popular: false,
     color: 'from-yellow-500 to-orange-500'
@@ -61,23 +61,23 @@ const services = [
 
 const additionalServices = [
   {
-    name: 'Tư vấn Phong Thủy',
-    description: 'Chuyên gia phong thủy tư vấn vị trí đặt cây',
+    name: 'Tư vấn Lịch Trình',
+    description: 'Chuyên gia du lịch tư vấn hành trình theo mùa',
     price: 'Miễn phí',
     icon: Users,
     color: 'from-forest-500 to-moss-500'
   },
   {
-    name: 'Vận chuyển An toàn',
-    description: 'Đội ngũ chuyên nghiệp vận chuyển cây',
-    price: 'Từ 1.000.000đ',
+    name: 'Đưa đón Sân bay',
+    description: 'Dịch vụ đưa đón từ sân bay Nội Bài',
+    price: 'Từ 2.500.000đ',
     icon: Shield,
     color: 'from-mountain-500 to-mountain-600'
   },
   {
-    name: 'Theo dõi IoT',
-    description: 'Hệ thống cảm biến thông minh',
-    price: 'Từ 500.000đ',
+    name: 'Chụp ảnh Chuyên nghiệp',
+    description: 'Photographer riêng + album kỷ niệm',
+    price: 'Từ 1.500.000đ',
     icon: Eye,
     color: 'from-earth-500 to-earth-600'
   }
@@ -105,12 +105,12 @@ const Services = () => {
           </div>
           
           <h1 className="text-4xl lg:text-6xl font-nature font-bold text-white mb-6">
-            Chăm Sóc Cây Trà
-            <span className="block text-forest-300">Như Báu Vật</span>
+            Gói Trải Nghiệm
+            <span className="block text-forest-300">Mộc Châu Trọn Vẹn</span>
           </h1>
           <p className="text-xl text-forest-200 max-w-3xl mx-auto">
-            Mỗi cây trà cổ thụ đều cần được chăm sóc với tình yêu và sự chuyên nghiệp. 
-            Chúng tôi mang đến các gói dịch vụ toàn diện cho từng nhu cầu.
+            Mỗi chuyến du lịch đều cần được lên kế hoạch chu đáo và trải nghiệm trọn vẹn. 
+            Chúng tôi mang đến các gói dịch vụ toàn diện cho mọi nhu cầu du lịch.
           </p>
         </div>
       </div>
@@ -120,10 +120,10 @@ const Services = () => {
         <div className="mb-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-nature font-bold text-forest-900 mb-4">
-              Gói Chăm Sóc Chuyên Nghiệp
+              Gói Du Lịch Trọn Gói
             </h2>
             <p className="text-lg text-forest-700 max-w-2xl mx-auto">
-              Lựa chọn gói dịch vụ phù hợp với nhu cầu và ngân sách của bạn
+              Lựa chọn gói trải nghiệm phù hợp với thời gian và ngân sách của bạn
             </p>
           </div>
 
@@ -181,10 +181,10 @@ const Services = () => {
         <div className="mb-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-nature font-bold text-forest-900 mb-4">
-              Dịch Vụ Bổ Sung
+              Dịch Vụ Thêm
             </h2>
             <p className="text-lg text-forest-700 max-w-2xl mx-auto">
-              Các dịch vụ chuyên biệt để nâng cao trải nghiệm chăm sóc cây trà
+              Các dịch vụ chuyên biệt để nâng cao trải nghiệm du lịch của bạn
             </p>
           </div>
           
@@ -215,11 +215,11 @@ const Services = () => {
               <Calendar className="h-10 w-10 text-white" />
             </div>
             <h2 className="text-3xl font-nature font-bold text-earth-900 mb-6">
-              Đặt Lịch Tư Vấn Miễn Phí
+              Tư Vấn Lịch Trình Miễn Phí
             </h2>
             <p className="text-earth-700 mb-8 text-lg leading-relaxed">
-              Chuyên gia của Chill sẽ tư vấn chi tiết về nhu cầu chăm sóc 
-              cây trà cổ thụ phù hợp với không gian và mong muốn của bạn
+              Chuyên gia du lịch của CHILL sẽ tư vấn chi tiết về lịch trình 
+              du lịch Mộc Châu phù hợp với thời gian và sở thích của bạn
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -244,7 +244,7 @@ const Services = () => {
             </div>
             
             <Button size="xl" variant="forest" className="w-full md:w-auto">
-              Đặt lịch tư vấn miễn phí
+              Nhận tư vấn miễn phí
             </Button>
           </div>
         </Card>
