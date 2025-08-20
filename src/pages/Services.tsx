@@ -347,7 +347,7 @@ const Services = () => {
                 >
                   <span className="flex items-center justify-center space-x-2">
                     <service.icon className="h-4 w-4" />
-                    <span className="text-forest-600">Đặt ngay</span>
+                    <span className="text-forest-600 border-2 border-forest-600">Đặt ngay</span>
                   </span>
                 </Button>
               </Card>
