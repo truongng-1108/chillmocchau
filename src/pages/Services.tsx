@@ -343,7 +343,7 @@ const Services = () => {
                 <Button 
                   variant={service.popular ? 'mountain' : 'outline'} 
                   size="md" 
-                  className="w-full hover:scale-105 transition-transform duration-300"
+                  className="w-full hover:scale-105 transition-transform duration-300  border-2 border-forest-600"
                 >
                   <span className="flex items-center justify-center space-x-2">
                     <service.icon className="h-4 w-4" />
