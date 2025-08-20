@@ -381,8 +381,8 @@ const Maps = () => {
             <div className="absolute inset-0 border-4 border-forest-600 rounded-full border-t-transparent animate-spin"></div>
             <TreePine className="absolute inset-0 m-auto h-12 w-12 text-forest-600 animate-pulse" />
           </div>
-          <h2 className="text-2xl font-elegant font-bold text-forest-900 mb-4">Đang tải bản đồ rừng trà...</h2>
-          <p className="text-forest-600 font-nature">Chuẩn bị khám phá những cây trà cổ thụ huyền thoại</p>
+          <h2 className="text-2xl font-elegant font-bold text-forest-900 mb-4">Đang tải bản đồ ...</h2>
+          <p className="text-forest-600 font-nature">Chuẩn bị khám phá các địa điểm du lịch tại Mộc Châu</p>
         </div>
       </div>
     );
