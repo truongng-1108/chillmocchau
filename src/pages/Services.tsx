@@ -341,13 +341,13 @@ const Services = () => {
                 </ul>
 
                 <Button 
-                  variant={service.popular ? 'mountain' : 'outline'} 
+                  variant={service.popular ? 'forest' : 'outline'} 
                   size="md" 
-                  className="w-full hover:scale-105 transition-transform duration-300  border-2 border-forest-600"
+                  className="w-full"
                 >
                   <span className="flex items-center justify-center space-x-2">
-                    <service.icon className="h-4 w-4" />
-                    <span className="text-forest-600">Đặt ngay</span>
+                    <service.icon className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
+                    <span className="font-medium">Đặt ngay</span>
                   </span>
                 </Button>
               </Card>

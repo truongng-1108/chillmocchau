@@ -28,29 +28,29 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Địa chỉ',
-      content: 'Vùng núi Mộc Châu',
-      subContent: 'Lào Cai, Việt Nam',
+      content: 'Mộc Châu, Sơn La',
+      subContent: 'Tây Bắc, Việt Nam',
       color: 'from-forest-500 to-moss-500'
     },
     {
       icon: Phone,
       title: 'Điện thoại',
-      content: '+84 123 456 789',
+      content: '+84 374 605 731',
       subContent: 'Hỗ trợ 24/7',
       color: 'from-mountain-500 to-mountain-600'
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'hello@Chill.vn',
-      subContent: 'support@Chill.vn',
+      content: 'chillmocchau@chillmocchau.vn',
+      subContent: 'support@chillmocchau.vn',
       color: 'from-earth-500 to-earth-600'
     },
     {
       icon: Clock,
       title: 'Giờ làm việc',
       content: 'Thứ 2 - Chủ nhật',
-      subContent: '6:00 - 18:00',
+      subContent: '06:00 - 22:00',
       color: 'from-moss-500 to-forest-600'
     }
   ];
@@ -68,16 +68,15 @@ const Contact = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-forest-800/50 backdrop-blur-sm rounded-full mb-6 border border-forest-600/30">
             <Leaf className="h-4 w-4 text-forest-400" />
-            <span className="text-forest-200 text-sm font-medium">Kết nối với chúng tôi</span>
+            <span className="text-forest-200 text-sm font-medium">Kết nối với CHILL Mộc Châu</span>
           </div>
           
           <h1 className="text-4xl lg:text-6xl font-nature font-bold text-white mb-6">
             Liên Hệ Với
-            <span className="block text-forest-300">Chill</span>
+            <span className="block text-forest-300">CHILL Mộc Châu</span>
           </h1>
           <p className="text-xl text-forest-200 max-w-3xl mx-auto">
-            Chúng tôi luôn sẵn sàng hỗ trợ và tư vấn cho bạn về dịch vụ chăm sóc 
-            cây trà cổ thụ và những câu chuyện từ rừng núi
+            Đội ngũ của chúng tôi sẵn sàng hỗ trợ bạn đặt homestay, ăn uống, tour/hoạt động, thuê xe, vé sự kiện và đặc sản theo mùa – nhanh, rõ ràng, đáng tin cậy.
           </p>
         </div>
       </div>
@@ -92,7 +91,7 @@ const Contact = () => {
                   <Send className="h-6 w-6 text-white" />
                 </div>
                 <h2 className="text-2xl font-nature font-bold text-forest-900">
-                  Gửi Tin Nhắn
+                  Gửi Yêu Cầu
                 </h2>
               </div>
               
@@ -155,10 +154,13 @@ const Contact = () => {
                     className="w-full px-4 py-3 bg-white/80 border border-forest-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent text-forest-800"
                   >
                     <option value="">Chọn chủ đề</option>
-                    <option value="purchase">Mua cây trà cổ thụ</option>
-                    <option value="rent">Thuê cây trà</option>
-                    <option value="care">Dịch vụ chăm sóc</option>
-                    <option value="consultation">Tư vấn phong thủy</option>
+                    <option value="homestay">Đặt homestay / khách sạn</option>
+                    <option value="restaurant">Đặt bàn / ăn uống</option>
+                    <option value="tour">Đặt tour / hoạt động trải nghiệm</option>
+                    <option value="vehicle">Thuê xe (xe máy/ô tô/ATV)</option>
+                    <option value="event">Vé sự kiện / festival</option>
+                    <option value="specialty">Đặc sản / giao hàng</option>
+                    <option value="policy">Khiếu nại / hoàn-hủy</option>
                     <option value="other">Khác</option>
                   </select>
                 </div>
@@ -174,13 +176,13 @@ const Contact = () => {
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Chia sẻ với chúng tôi về nhu cầu và mong muốn của bạn..."
+                    placeholder="Ví dụ: Cần homestay 2 đêm (24–26/09), 4 người, gần rừng thông Bản Áng; thêm BBQ tối và tour hái dâu sáng hôm sau."
                     className="w-full px-4 py-3 bg-white/80 border border-forest-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent text-forest-800"
                   />
                 </div>
 
                 <Button type="submit" size="lg" icon={Send} className="w-full" variant="forest">
-                  Gửi tin nhắn
+                  Gửi yêu cầu
                 </Button>
               </form>
             </Card>
@@ -208,7 +210,7 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Map */}
+            {/* Map (placeholder visual) */}
             <Card variant="earth" className="overflow-hidden">
               <div className="h-64 bg-gradient-to-br from-earth-100 to-earth-200 flex items-center justify-center relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-mountain-500/20 to-forest-500/20" />
@@ -217,10 +219,10 @@ const Contact = () => {
                     <Mountain className="h-10 w-10 text-white" />
                   </div>
                   <div className="text-earth-800 font-nature font-bold text-lg">
-                    Vùng núi Mộc Châu
+                    Mộc Châu, Sơn La
                   </div>
                   <div className="text-earth-600">
-                    Lào Cai, Việt Nam
+                    Tây Bắc, Việt Nam
                   </div>
                 </div>
               </div>
@@ -233,29 +235,29 @@ const Contact = () => {
                   <TreePine className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-nature font-bold text-xl text-forest-900">
-                  Tại sao chọn Chill?
+                  Vì sao chọn CHILL Mộc Châu?
                 </h3>
               </div>
               <ul className="space-y-4 text-forest-700">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-forest-500 rounded-full mt-2 mr-4 flex-shrink-0"></span>
-                  <span>20+ năm kinh nghiệm trong lĩnh vực cây trà cổ thụ</span>
+                  <span>Mạng lưới đối tác uy tín (KYC), ảnh & địa điểm đã kiểm chứng.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-forest-500 rounded-full mt-2 mr-4 flex-shrink-0"></span>
-                  <span>Đội ngũ chuyên gia nông nghiệp và phong thủy hàng đầu</span>
+                  <span>Combo theo mùa: hoa mận, hoa cải, dâu; gợi ý lịch trình thông minh.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-forest-500 rounded-full mt-2 mr-4 flex-shrink-0"></span>
-                  <span>Công nghệ IoT và AI tiên tiến trong chăm sóc</span>
+                  <span>Chính sách cọc/hủy/hoàn rõ ràng; hỗ trợ minh bạch khiếu nại.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-forest-500 rounded-full mt-2 mr-4 flex-shrink-0"></span>
-                  <span>Cam kết chất lượng và bảo hành toàn diện</span>
+                  <span>Tích điểm & ưu đãi loyalty; voucher theo khung giờ và sự kiện.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-forest-500 rounded-full mt-2 mr-4 flex-shrink-0"></span>
-                  <span>Kết nối với thiên nhiên và văn hóa trà Việt Nam</span>
+                  <span>Hỗ trợ 24/7, ưu tiên an toàn khi tham gia tour & di chuyển.</span>
                 </li>
               </ul>
             </Card>

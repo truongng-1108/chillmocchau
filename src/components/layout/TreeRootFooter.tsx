@@ -32,26 +32,26 @@ const TreeRootFooter = () => {
                 <Mountain className="absolute -bottom-1 -left-1 h-4 w-4 text-mountain-400 opacity-60" />
               </div>
               <div className="flex flex-col">
-                <span className="font-elegant font-bold text-3xl text-white tracking-wider">Chill</span>
+                <span className="font-elegant font-bold text-3xl text-white tracking-wider">CHILL</span>
                 <span className="text-sm text-forest-300 -mt-1 font-nature">Mộc Châu</span>
               </div>
             </div>
             
             <p className="text-forest-300 font-nature leading-relaxed">
-              Khám phá và bảo tồn những cây trà cổ thụ quý hiếm từ những dãy núi 
-              hùng vĩ, mang đến trải nghiệm thiên nhiên thuần khiết.
+              Nền tảng trải nghiệm – đặt dịch vụ tại Mộc Châu: lưu trú, ăn uống, tour/hoạt động,
+              thuê xe, vé sự kiện và đặc sản theo mùa. Trải nghiệm thân thiện, tin cậy, rõ ràng.
             </p>
             
             <div className="flex space-x-4">
-              <div className="p-3 bg-forest-800/50 rounded-full hover:bg-forest-700/50 transition-colors duration-300 cursor-pointer group">
+              <a className="p-3 bg-forest-800/50 rounded-full hover:bg-forest-700/50 transition-colors duration-300 cursor-pointer group" aria-label="Facebook">
                 <Facebook className="h-5 w-5 text-forest-400 group-hover:text-forest-300" />
-              </div>
-              <div className="p-3 bg-forest-800/50 rounded-full hover:bg-forest-700/50 transition-colors duration-300 cursor-pointer group">
+              </a>
+              <a className="p-3 bg-forest-800/50 rounded-full hover:bg-forest-700/50 transition-colors duration-300 cursor-pointer group" aria-label="Instagram">
                 <Instagram className="h-5 w-5 text-forest-400 group-hover:text-forest-300" />
-              </div>
-              <div className="p-3 bg-forest-800/50 rounded-full hover:bg-forest-700/50 transition-colors duration-300 cursor-pointer group">
+              </a>
+              <a className="p-3 bg-forest-800/50 rounded-full hover:bg-forest-700/50 transition-colors duration-300 cursor-pointer group" aria-label="YouTube">
                 <Youtube className="h-5 w-5 text-forest-400 group-hover:text-forest-300" />
-              </div>
+              </a>
             </div>
           </div>
 
@@ -63,27 +63,27 @@ const TreeRootFooter = () => {
             </h3>
             <ul className="space-y-4 font-nature">
               <li>
-                <Link to="/products" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
+                <Link to="/explore" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
                   <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4 group-hover:scale-150 transition-transform duration-300"></span>
-                  Mộc Châu
+                  Khám phá Mộc Châu
                 </Link>
               </li>
               <li>
                 <Link to="/maps" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
                   <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4 group-hover:scale-150 transition-transform duration-300"></span>
-                  Bản đồ rừng trà
+                  Bản đồ trải nghiệm
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
+                <Link to="/homestays" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
                   <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4 group-hover:scale-150 transition-transform duration-300"></span>
-                  Dịch vụ chăm sóc
+                  Lưu trú (Homestay/Hotel)
                 </Link>
               </li>
               <li>
-                <Link to="/my-tour" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
+                <Link to="/food" className="text-forest-300 hover:text-forest-200 transition-colors duration-300 flex items-center group">
                   <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4 group-hover:scale-150 transition-transform duration-300"></span>
-                  Cây của tôi
+                  Ăn uống & Giải trí
                 </Link>
               </li>
               <li>
@@ -104,19 +104,27 @@ const TreeRootFooter = () => {
             <ul className="space-y-4 font-nature">
               <li className="text-forest-300 flex items-center">
                 <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4"></span>
-                Bán cây trà cổ thụ
+                Đặt homestay / khách sạn
               </li>
               <li className="text-forest-300 flex items-center">
                 <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4"></span>
-                Cho thuê cây cảnh
+                Đặt bàn / Nhà hàng – Café – Bar
               </li>
               <li className="text-forest-300 flex items-center">
                 <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4"></span>
-                Chăm sóc chuyên nghiệp
+                Tour & hoạt động trải nghiệm
               </li>
               <li className="text-forest-300 flex items-center">
                 <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4"></span>
-                Tư vấn phong thủy
+                Thuê xe (xe máy/ô tô/ATV/xe đạp)
+              </li>
+              <li className="text-forest-300 flex items-center">
+                <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4"></span>
+                Vé sự kiện / festival
+              </li>
+              <li className="text-forest-300 flex items-center">
+                <span className="w-2 h-2 bg-vintage-400 rounded-full mr-4"></span>
+                Đặc sản & giao hàng
               </li>
             </ul>
           </div>
@@ -131,20 +139,20 @@ const TreeRootFooter = () => {
               <div className="flex items-start space-x-4 group">
                 <MapPin className="h-5 w-5 text-forest-400 mt-1 group-hover:text-forest-300 transition-colors duration-300" />
                 <span className="text-forest-300 group-hover:text-forest-200 transition-colors duration-300">
-                  Vùng núi Mộc Châu<br />Lào Cai, Việt Nam
+                  Mộc Châu, Sơn La<br />Việt Nam
                 </span>
               </div>
               <div className="flex items-center space-x-4 group">
                 <Phone className="h-5 w-5 text-forest-400 group-hover:text-forest-300 transition-colors duration-300" />
-                <span className="text-forest-300 group-hover:text-forest-200 transition-colors duration-300">
-                  +84 123 456 789
-                </span>
+                <a href="tel:+84374605731" className="text-forest-300 group-hover:text-forest-200 transition-colors duration-300">
+                  +84 374 605 731
+                </a>
               </div>
               <div className="flex items-center space-x-4 group">
                 <Mail className="h-5 w-5 text-forest-400 group-hover:text-forest-300 transition-colors duration-300" />
-                <span className="text-forest-300 group-hover:text-forest-200 transition-colors duration-300">
-                  hello@Chill.vn
-                </span>
+                <a href="mailto:support@chillmocchau.vn" className="text-forest-300 group-hover:text-forest-200 transition-colors duration-300">
+                  support@chillmocchau.vn
+                </a>
               </div>
             </div>
           </div>
@@ -157,15 +165,15 @@ const TreeRootFooter = () => {
           
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-forest-400 font-nature">
-              &copy; 2025 Chill. Tất cả quyền được bảo lưu.
+              &copy; {new Date().getFullYear()} CHILL Mộc Châu. Tất cả quyền được bảo lưu.
             </p>
             <div className="flex items-center space-x-8 font-nature">
-              <span className="text-forest-400 hover:text-forest-300 transition-colors duration-300 cursor-pointer">
+              <Link to="/privacy" className="text-forest-400 hover:text-forest-300 transition-colors duration-300">
                 Chính sách bảo mật
-              </span>
-              <span className="text-forest-400 hover:text-forest-300 transition-colors duration-300 cursor-pointer">
+              </Link>
+              <Link to="/terms" className="text-forest-400 hover:text-forest-300 transition-colors duration-300">
                 Điều khoản sử dụng
-              </span>
+              </Link>
             </div>
           </div>
         </div>

@@ -22,14 +22,14 @@ const Button: React.FC<ButtonProps> = ({
   disabled = false,
   type = 'button',
 }) => {
-  const baseClasses = 'inline-flex items-center justify-center font-medium rounded-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 relative overflow-hidden group';
+  const baseClasses = 'inline-flex items-center justify-center font-medium rounded-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 relative overflow-hidden group active:scale-95';
   
   const variantClasses = {
     primary: 'bg-gradient-to-r from-forest-600 to-moss-600 text-white hover:from-forest-500 hover:to-moss-500 focus:ring-forest-500 shadow-forest hover:shadow-xl hover:scale-105',
     secondary: 'bg-gradient-to-r from-mountain-600 to-mountain-700 text-white hover:from-mountain-500 hover:to-mountain-600 focus:ring-mountain-500 shadow-mountain hover:shadow-xl hover:scale-105',
     outline: 'border-2 border-forest-600 text-forest-600 hover:bg-forest-600 hover:text-white focus:ring-forest-500 hover:scale-105',
-    forest: 'bg-gradient-to-r from-forest-700 to-forest-800 text-forest-100 hover:from-forest-600 hover:to-forest-700 focus:ring-forest-500 shadow-forest hover:shadow-xl',
-    mountain: 'bg-gradient-to-r from-earth-600 to-earth-700 text-white hover:from-earth-500 hover:to-earth-600 focus:ring-earth-500 shadow-earth hover:shadow-xl',
+    forest: 'bg-gradient-to-r from-forest-700 to-forest-800 text-forest-100 hover:from-forest-600 hover:to-forest-700 focus:ring-forest-500 shadow-forest hover:shadow-xl hover:scale-105',
+    mountain: 'bg-gradient-to-r from-earth-600 to-earth-700 text-white hover:from-earth-500 hover:to-earth-600 focus:ring-earth-500 shadow-earth hover:shadow-xl hover:scale-105',
   };
 
   const sizeClasses = {

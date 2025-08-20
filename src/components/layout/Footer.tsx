@@ -127,13 +127,13 @@ const Footer = () => {
               <div className="flex items-center space-x-3 group">
                 <Phone className="h-4 w-4 text-forest-400 group-hover:text-forest-300 transition-colors duration-300" />
                 <span className="text-forest-300 group-hover:text-forest-200 transition-colors duration-300">
-                  +84 123 456 789
+                  +84 374 605 731
                 </span>
               </div>
               <div className="flex items-center space-x-3 group">
                 <Mail className="h-4 w-4 text-forest-400 group-hover:text-forest-300 transition-colors duration-300" />
                 <span className="text-forest-300 group-hover:text-forest-200 transition-colors duration-300">
-                  hello@chill.vn
+                  chillmocchau@chillmocchau.vn
                 </span>
               </div>
             </div>
